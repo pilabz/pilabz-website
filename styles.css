@@ -1,0 +1,2075 @@
+/* Font Import */
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviThin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviRegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviSemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviSemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviBoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviExtrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviExtraback.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviBlack.ttf') format('truetype');
+  font-weight: 950;
+  font-style: normal;
+}
+
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Zoho Puvi';
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+
+.header {
+    background-color: #141414;
+    color: #A1A1AA;
+    /* height: 70px; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: #27272A 1px solid;
+}
+
+.pilabzLogo {
+    /* height: 70px; */
+    width: 98px;
+    padding: 20px;
+    padding-left: 30px;
+    display: inline-block;
+    z-index: 1000;
+    order: 1;
+}
+
+.dummyNavDiv {
+    /* height: 70px; */
+    width: 98px;
+    padding: 20px;
+    display: inline-block;
+    z-index: 1000;
+    order: 3;
+}
+
+/* NavBar */
+
+nav {
+    /* background: #ff7070; */
+    /* padding: 12px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: "Roboto", serif; */
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* color: white; */
+    font-size: 16px;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    /* letter-spacing: 2px; */
+    width: 100%;
+    z-index: 2000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0;
+    list-style: none;
+    order: 3;
+}
+
+nav a {
+    color: #A1A1AA;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.menuBar {
+    /* float: right; */
+    width: 7%;
+    object-fit: scale-down;
+    z-index: 3000;
+}
+
+.checkbtn {
+    /* float: right; */
+    cursor: pointer;
+    height: 10px;
+    display: none;
+    z-index: 3000;
+    order: 2;
+}
+
+#check {
+    display: none;
+}
+
+/* Pages */
+
+.sectionContainer {
+    background-color: #141414;
+}
+
+/* Section1  */
+
+.section1 {
+    height: calc(100dvh - 78.64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container1 {
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tagsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headingLine {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.research {
+    color: #0079D1;
+}
+
+.performance {
+    color: #008A00;
+}
+
+.tagLine {
+    color: #A1A1AA;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.exploreBtn {
+    background-color: #0079D1;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBtn {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section2 */
+
+.section2 {
+    background-image: url(/assets/images/officeImage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.whoWeAre {
+    margin: 10px 120px;
+    color: #0079D1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.whoWeAreContent {
+    margin: 10px 120px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.whoWeAreContentMobile {
+    display: none;
+}
+
+/* Section3 */
+
+.section3 {
+    /* height: calc(100dvh - 78.64px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.ourProductsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.ourProducts {
+    margin: 10px 120px;
+    color: #008A00;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ourProductsContent {
+    margin: 10px 120px;
+    /* margin-bottom: 80px; */
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+/* ProductCards */
+
+.productsContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.productsContainerMobile {
+    display: none;
+}
+
+.productsScroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 40px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.products-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.productCard {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 450px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 4px;
+    /* padding: 16px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prevButton, .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #141414;
+    color: #fff;
+    border: none;
+    font-size: 32px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prevButton {
+    left: 0;
+}
+
+.nextButton {
+    right: 0;
+}
+
+.productType {
+    background-color: #008A00;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 120px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.productName {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0079D1;
+    margin-left: 15px;
+}
+
+.productDesc {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0px 15px;
+}
+
+.productImgLM {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 9 / 9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: auto;
+}
+
+.piCADImg {
+    background-image: url(/assets/images/PiCADSProductImage.svg);
+}
+
+.milliOhmMeterImg {
+    background-image: url(/assets/images/milliOhmMeterImg.svg);
+}
+
+.programmablePowerSupplyImg {
+    background-image: url(/assets/images/programmablePowerSupplyImg.svg);
+}
+
+.autonomousMobileRobotImg {
+    background-image: url(/assets/images/autonomousMobileRobotImg.svg);
+}
+
+.motorWindingMachineImg {
+    background-image: url(/assets/images/motorWindingMachineImg.svg);
+}
+
+.regulatedPowerSupplyImg {
+    background-image: url(/assets/images/regulatedPowerSupplyImg.svg);
+}
+
+.thermalHeatPumpImg {
+    background-image: url(/assets/images/thermalHeatPumpImg.svg);
+}
+
+.learnMoreBtn {
+    background-color: #0079D1;
+    font-size: 14px;
+    font-weight: 500;
+    width: 95%;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+/* Section4 */
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1E2224;
+}
+
+.aboutUs {
+    color: #008A00;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.ourMissionVisionContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourMissionContainer {
+    background-image: url(/assets/images/ourMissionBgImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 4 / 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: auto;
+}
+
+.ourVisionContainer {
+    background-image: url(/assets/images/ourVisionBgImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 4 / 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: auto;
+    text-align: right;
+    margin-top: 60px;
+}
+
+.ourMission {
+    margin: 10px 120px;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0079D1;
+}
+
+.ourMissionContent {
+    margin: 10px 120px 30px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 50%;
+}
+
+.ourVision {
+    margin: 10px 120px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0079D1;
+}
+
+.ourVisionContent {
+    margin: 10px 120px 30px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 50%;
+}
+
+/* Our Core Values */
+
+.ourCoreValuesContainer {
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+}
+
+.ourCoreValuesSubContainer {
+    margin: 60px 10px 30px 120px;
+    width: 50%;
+}
+
+.ourCoreValues {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0079D1;
+}
+
+.ourCoreValuesPoints {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.ourCoreValuesPoints span {
+    color: #008A00;
+}
+
+.ourCoreValuesImg {
+    background-image: url(/assets/images/ourCoreValuesImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 149 / 85;
+    overflow: auto;
+    margin: 60px 120px 30px 10px;
+    width: 50%;
+    max-height: 400px;
+    height: 100%;
+}
+
+/* The Minds Behind Innovation */
+
+.theMindsContainer {
+    background-color: #1E2224;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.theMinds {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.theMinds span {
+    color: #0079D1;
+}
+
+.personCardsContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.personCard {
+    margin-right: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* padding-left: 16px; */
+    height: 100%;
+}
+
+.personCard::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0f0f0f, #007bff); /* black to blue */
+    border-radius: 2px;
+}
+
+.person1, .person3 {
+    margin-top: 80px;
+}
+
+.person1 {
+    width: 20%;
+    margin-left: 80px;
+}
+
+.person2 {
+    width: 25%;
+}
+
+.person3 {
+    width: 20%;
+}
+
+.srinivasTangiralaImg {
+    background-image: url(/assets/images/srinivasTangiralaImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -1px;
+    aspect-ratio: 19 / 23;
+    overflow: auto;
+}
+
+.kannanImg {
+    background-image: url(/assets/images/kannanLakshminarayananImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -1px;
+    aspect-ratio: 1 / 1;
+    overflow: auto;
+}
+
+.radhakrishnanImg {
+    background-image: url(/assets/images/radhakrishnanImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -1px;
+    aspect-ratio: 19 / 23;
+    overflow: auto;
+}
+
+.personDetails {
+    margin-top: 20px;
+    margin-left: 20px; 
+}
+
+.personDetails h3 {
+    font-size: 23px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.personDetails div {
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 600;
+    color: #777777;
+}
+
+.knowMoreAboutThem {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0079D1;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+.personCardsContainerMore {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.personCardMore {
+    margin: 40px 120px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    color: white;
+    /* padding-left: 16px; */
+    height: 100%;
+    width: calc(100% - 240px);
+}
+
+.personCardMore::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0f0f0f, #007bff); /* black to blue */
+    border-radius: 2px;
+}
+
+.person1More, .person3More {
+    /* margin-top: 80px; */
+}
+
+.person1More {
+    /* width: 20%; */
+    /* margin-left: 80px; */
+}
+
+.person2More {
+    /* width: 25%; */
+}
+
+.person3More {
+    /* width: 20%; */
+}
+
+.photoCardMore {
+    /* width: 40%; */
+}
+
+.personDetailsMore {
+    margin-top: 20px;
+    margin-left: 20px; 
+}
+
+.personDetailsMore h3 {
+    font-size: 23px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.noWrapNameMore h3 {
+    white-space: nowrap;
+}
+
+.personDetailsMore div {
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 600;
+    color: #777777;
+}
+
+.personOverviewMore {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 100px;
+}
+
+/* What We Do */
+
+.whatWeDoContainer {
+    background-color: #141414;
+    padding-bottom: 20px;
+}
+
+.whatWeDo {
+    margin: 40px 120px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0079D1;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin: 30px 120px;
+    gap: 40px;
+}
+
+.whatCard {
+    background-color: #1E2224;
+    padding: 24px 20px;
+    width: 240px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.cardIcon {
+    width: 35px;
+    height: 35px;
+    background-color: #008A00;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: -24px;
+    left: 65%;
+    overflow: visible;
+}
+
+.cardTitle {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #008A00;
+    line-height: 30px;
+}
+
+.cardDesc {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+/* Services Capabilities */
+
+.servicesCapabilitiesContainer {
+    background-color: #1E2224;
+    margin-bottom: 60px;
+}
+
+.servicesCapabilities {
+    margin: 40px 120px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0079D1;
+}
+
+.servicesListContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 120px;
+    gap: 40px;
+}
+
+.servicesList {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 300px;
+}
+
+.servicesIcon {
+    width: 35px;
+    height: 35px;
+    background-color: #008A00;
+    border-radius: 50%;
+    padding: 10px;
+    overflow: visible;
+}
+
+.servicesTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+/* Industries We Serve */
+/* (This Section is similar to the above, so used the same class names to style this section)  */
+
+.industriesWeServeContainer {
+    background-color: #141414;
+    padding-bottom: 20px;
+}
+
+/* Section5 - Careers */
+
+.section5 {
+    background-color: #1E2224;
+}
+
+.careersContainer {
+    display: flex;
+    margin: 30px 120px;
+}
+
+.joinUs {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.careersTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: #008A00;
+    margin: 40px 0px;
+}
+
+.joinOurFast {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.openPositionsBtn {
+    background-color: #008A00;
+    font-size: 24px;
+    font-weight: 600;
+    width: 366px;
+    height: 52px;
+    margin-top: 125px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamPics {
+  width: 60%;
+  max-width: 700px;
+  margin: 100px 50px;
+  margin-right: 0px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselImg {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.carouselDots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: #555;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.dot.active {
+  width: 25px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.openPositionsBtnMobile {
+    display: none;
+}
+
+/* Section6 - Contact */
+
+.contactContainer {
+    margin: 40px 120px 0px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.addressSocialContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addressSocialContainer img {
+    width: 15px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.addressContainer {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.addressContainer > div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.addressTitle {
+    font-weight: 600;
+}
+
+.footerLogoContainer {
+    text-align: end;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contactPilabzLogo {
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* Responsive Design Tablet */
+@media (max-width: 991px) {
+
+    /* Header */
+
+    .pilabzLogo {
+        /* height: 50px; */
+        width: 68px;
+        padding: 15px;
+        padding-left: 22.5px;
+        display: inline-block;
+        z-index: 1000;
+        order: 1;
+    }
+
+    /* NavBar */
+
+    nav {
+        font-size: 13px;
+    }
+
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0;
+    list-style: none;
+    order: 3;
+    }
+
+    /* Pages */
+    /* Section1 */
+
+    .section1 {
+        height: calc(100dvh - 57.05px);
+    }
+
+    .container1 {
+        height: 300px;
+    }
+
+    .headingLine {
+        font-size: 45px;
+    }
+
+    .tagLine {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .btnContainer {
+        font-size: 14px;
+    }
+
+    .exploreBtn, .contactBtn {
+        width: 175px;
+        height: 42px;
+        border-radius: 4px;
+    }
+
+    /* Section2 */
+
+    .whoWeAre {
+    margin: 10px 80px;
+    color: #0079D1;
+    font-size: 30px;
+    font-weight: bold;
+    }
+
+    .whoWeAreContent {
+        margin: 10px 80px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    /* Section3 */
+
+    .ourProducts {
+    margin: 10px 80px;
+    color: #008A00;
+    font-size: 30px;
+    font-weight: bold;
+    }
+
+    .ourProductsContent {
+        margin: 10px 80px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    /* ProductCards */
+
+    .productsScroll {
+        padding: 15px;
+        gap: 30px;
+    }
+
+    .productCard {
+        width: 300px;
+        height: 400px;
+    }
+
+    .prevButton, .nextButton {
+        font-size: 28px;
+    }
+
+    .productType {
+        background-color: #008A00;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        width: 100px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .productName {
+        font-size: 25px;
+    }
+
+    .productDesc {
+        font-size: 13px;
+    }
+
+    .learnMoreBtn {
+        font-size: 12px;
+        width: 95%;
+        height: 23px;
+    }
+
+    /* Section4 */
+
+    .aboutUs {
+        font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .ourMission {
+        margin: 10px 80px;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .ourMissionContent {
+        margin: 10px 80px 25px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .ourVisionContainer {
+        margin-top: 45px;
+    }
+
+    .ourVision {
+        margin: 10px 80px;
+        font-size: 30px;
+    }
+
+    .ourVisionContent {
+        margin: 10px 80px 25px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    /* Our Core Values */
+
+    .ourCoreValuesSubContainer {
+        margin: 45px 10px 20px 80px;
+    }
+
+    .ourCoreValues {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .ourCoreValuesPoints {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .ourCoreValuesImg {
+        margin: 45px 80px 20px 10px;
+        max-height: 300px;
+    }
+
+    /* The Minds Behind Innovation */
+
+    .theMindsContainer {
+        margin-bottom: 40px;
+    }
+
+    .theMinds {
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .personCardsContainer {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .personCard {
+        margin-right: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 100%;
+    }
+
+    .personCard::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(to bottom, #0f0f0f, #007bff); /* black to blue */
+        border-radius: 2px;
+    }
+
+    .person1, .person3 {
+        margin-top: 40px;
+    }
+
+    .person1 {
+        margin-left: 40px;
+    }
+
+    .personDetails {
+        margin-top: 15px;
+        margin-left: 15px; 
+    }
+
+    .personDetails h3 {
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+
+    .personDetails div {
+        font-size: 15px;
+    }
+
+    .knowMoreAboutThem {
+        font-size: 18px;
+        font-weight: bold;
+        color: #0079D1;
+        text-decoration: underline;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .personOverviewMore {
+        font-size: 16px;
+        line-height: 25px;
+        margin-left: 50px;
+    }
+
+    /* What We Do */
+
+    .whatWeDo {
+        margin: 20px 80px;
+        font-size: 30px;
+    }
+
+    .cardsContainer {
+        margin: 30px 80px;
+        gap: 30px;
+    }
+
+    .whatCard {
+        padding: 18px 15px;
+        width: 200px;
+    }
+
+    .cardIcon {
+        width: 25px;
+        height: 25px;
+        padding: 8px;
+        top: -18px;
+    }
+
+    .cardTitle {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .cardDesc {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    /* Services Capabilities */
+
+    .servicesCapabilitiesContainer {
+        margin-bottom: 40px;
+    }
+
+    .servicesCapabilities {
+        margin: 20px 80px;
+        font-size: 30px;
+    }
+
+    .servicesListContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 80px;
+        gap: 30px;
+    }
+
+    .servicesList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+
+    .servicesIcon {
+        width: 25px;
+        height: 25px;
+        padding: 8px;
+    }
+
+    .servicesTitle {
+        font-size: 15px;
+        margin: 8px 8px;
+    }
+
+    /* Section5 - Careers */
+
+    .careersContainer {
+        margin: 20px 80px;
+    }
+
+    .careersTitle {
+        font-size: 30px;
+        margin: 30px 0px;
+    }
+
+    .joinOurFast {
+        font-size: 30px;
+    }
+
+    .openPositionsBtn {
+        background-color: #008A00;
+        font-size: 18px;
+        font-weight: 600;
+        width: 250px;
+        height: 40px;
+        margin-top: 65px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teamPics {
+        width: 60%;
+        max-width: 700px;
+        margin: 50px 25px;
+        margin-right: 0px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+    }
+
+    .dot.active {
+        width: 20px;
+        border-radius: 15px;
+    }
+
+    /* Section6 - Contact */
+
+    .contactContainer {
+        margin: 30px 80px 0px;
+        padding-bottom: 30px;
+    }
+
+    .addressSocialContainer img {
+        width: 12px;
+        margin-top: 2px;
+        margin-right: 4px;
+    }
+
+    .addressContainer {
+        font-size: 12px;
+    }
+
+    .footerLogoContainer {
+        font-size: 12px;
+    }
+
+    .contactPilabzLogo {
+        width: 120px;
+        margin-bottom: 8px;
+    }
+
+}
+
+
+/* Responsive Design Mobile */
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .pilabzLogo {
+        /* height: 50px; */
+        width: 78px;
+        padding: 10px;
+        padding-left: 15px;
+        display: inline-block;
+        z-index: 1000;
+        order: 1;
+    }
+
+    .dummyNavDiv {
+        display: none;
+    }
+
+    /* NavBar */
+
+    nav {
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        /* margin-top: 180px; */
+        margin-bottom: 10px;
+        padding: 10px;
+        order: 3;
+        width: 100%;
+        z-index: 3000;
+    }
+    
+    nav ul li {
+        display: block;
+        padding: 5px;
+    }
+    
+    .checkbtn {
+        /* float: right; */
+        cursor: pointer;
+        display: block;
+        /* width: 5%; */
+        margin-right: 10px;
+        z-index: 1000;
+        order: 2;
+    }
+    
+    #check:checked nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #check:checked ~ ul {
+        display: flex;
+    }
+
+    #check:checked nav {
+        height: fit-content;
+    }
+
+    /* Pages */
+    /* Section1 */
+
+    .section1 {
+        height: calc(100dvh - 50.91px);
+    }
+
+    .container1 {
+        height: 365px;
+    }
+
+    /* .tagsContainer {
+        margin: 0px 40px;
+    } */
+
+    .headingLine {
+        font-size: 30px;
+        margin: 0px 40px;
+    }
+
+    .tagLine {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .btnContainer {
+        font-size: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exploreBtn, .contactBtn {
+        width: 120px;
+        height: 35px;
+        border-radius: 4px;
+    }
+
+    .contactBtn {
+        margin-top: 10px;
+    }
+
+    /* Section2 */
+
+    .whoWeAre {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .whoWeAreContent {
+        display: none;
+    }
+
+    .whoWeAreContentMobile {
+        display: block;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 600;
+        text-align: center;
+        margin: 15px;
+    }
+
+    /* Section3 */
+
+    .ourProducts {
+    font-size: 20px;
+    text-align: center;
+    }
+
+    .ourProductsContent {
+        margin: 15px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .productsContainer {
+        display: none;
+    }
+
+    .productsContainerMobile {
+        display: block;
+        padding: 20px;
+    }
+
+    .productCardMobile {
+        flex: 0 0 auto;
+        height: 150px;
+        background-color: #1e1e1e;
+        color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px 0px;
+    }
+
+    .flexRow {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .flexRow > div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .productTypeMobile {
+        background-color: #008A00;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        width: 70px;
+        min-height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        font-size: 8px;
+        font-weight: 600;
+    }
+
+    .productNameMobile {
+        font-size: 18px;
+        font-weight: bold;
+        color: #0079D1;
+        margin-left: 15px;
+    }
+
+    .productDescMobile {
+        font-size: 10px;
+        line-height: 14px;
+        margin: 0px 15px;
+    }
+
+    .productImgLMMobile {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 9 / 9;
+        height: 120px;
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        overflow: auto;
+        margin-right: 5%;
+    }
+
+    .piCADImg {
+        background-image: url(/assets/images/PiCADSProductImage.svg);
+    }
+
+    .milliOhmMeterImg {
+        background-image: url(/assets/images/milliOhmMeterImg.svg);
+    }
+
+    .programmablePowerSupplyImg {
+        background-image: url(/assets/images/programmablePowerSupplyImg.svg);
+    }
+
+    .learnMoreBtnMobile {
+        background-color: #0079D1;
+        font-size: 10px;
+        width: 90px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        /* align-self: self-end; */
+    }
+
+    .viewAllProducts {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0079D1;
+        text-decoration: underline;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .hideProducts {
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Section4 */
+
+    .aboutUs {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .ourMission {
+        margin: 5px 20px;
+        font-size: 18px;
+    }
+
+    .ourMissionContent {
+        margin: 5px 20px;
+        font-size: 10px;
+        line-height: normal;
+        width: 90%;
+    }
+
+    .ourVisionContainer {
+        margin-top: 30px;
+    }
+
+    .ourVision {
+        margin: 5px 20px;
+        font-size: 18px;
+    }
+
+    .ourVisionContent {
+        margin: 5px 20px;
+        font-size: 10px;
+        line-height: normal;
+        width: 90%;
+    }
+
+    /* Our Core Values */
+
+    .ourCoreValuesContainer {
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ourCoreValuesSubContainer {
+        margin: 30px 20px 5px;
+        width: inherit;
+    }
+
+    .ourCoreValues {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .ourCoreValuesPoints {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .ourCoreValuesPoints span {
+        color: #008A00;
+    }
+
+    .ourCoreValuesImg {
+        margin: 30px 20px;
+        width: 90%;
+        max-height: 300px;
+    }
+
+    /* The Minds Behind Innovation */
+
+    .theMindsContainer {
+        margin-bottom: 20px;
+    }
+
+    .theMinds {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .personCardsContainer {
+        margin: 20px 0px;
+    }
+
+    .personCard {
+        margin-right: 25px;
+    }
+
+    .person1, .person3 {
+        margin-top: 20px;
+    }
+
+    .person1 {
+        margin-left: 25px;
+    }
+
+    .personDetails {
+        margin-top: 4px;
+        margin-left: 8px; 
+    }
+
+    .personDetails h3 {
+        font-size: 10px;
+        margin: 4px 0px;
+    }
+
+    .personDetails div {
+        font-size: 8px;
+    }
+
+    .knowMoreAboutThem {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0079D1;
+        text-decoration: underline;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .personCardMore {
+        margin: 5px 40px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: white;
+        /* padding-left: 16px; */
+        height: 100%;
+        width: calc(100% - 80px);
+    }
+
+    .personOverviewMore {
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 20px;
+        margin-top: 4px;
+    }
+
+    /* What We Do */
+
+    .whatWeDo {
+        margin: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .cardsContainer {
+        margin: 5px 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .whatCard {
+        padding: 12px 8px;
+        width: 130px;
+    }
+
+    .cardIcon {
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        top: -12px;
+        right: 30px;
+    }
+
+    .cardTitle {
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .cardDesc {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    /* Services Capabilities */
+
+    .servicesCapabilitiesContainer {
+        margin-bottom: 20px;
+    }
+
+    .servicesCapabilities {
+        margin: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .servicesListContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5px 20px;
+        gap: 15px;
+    }
+
+    .servicesList {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 280px;
+    }
+
+    .servicesIcon {
+        width: 20px;
+        height: 20px;
+        padding: 8px;
+    }
+
+    .servicesTitle {
+        font-size: 12px;
+        margin: 8px 8px;
+    }
+
+    /* Section5 - Careers */
+
+    .careersContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 5px 40px;
+    }
+
+    .joinUs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .careersTitle {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+
+    .joinOurFast {
+        font-size: 20px;
+    }
+
+    .haveAnOutsized {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .openPositionsBtn {
+        display: none;
+    }
+
+    .teamPics {
+        width: 100%;
+        max-width: 700px;
+        margin: 50px 0px;
+    }
+
+    .carouselDots {
+        margin-top: 8px;
+    }
+
+    .dot {
+        height: 5px;
+        width: 5px;
+        margin: 0 2px;
+    }
+
+    .dot.active {
+        width: 10px;
+    }
+
+    .openPositionsBtnMobile {
+        background-color: #008A00;
+        font-size: 14px;
+        font-weight: 600;
+        width: 270px;
+        height: 44px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Section6 - Contact */
+
+    .contactContainer {
+        margin: 20px 40px 0px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addressSocialContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addressSocialContainer img {
+        width: 12px;
+        margin-top: 2px;
+        margin-right: 4px;
+    }
+
+    .addressContainer {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .addressContainer > div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .addressTitle {
+        font-weight: 600;
+    }
+
+    .footerLogoContainer {
+        text-align: center;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .contactPilabzLogo {
+        width: 80px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+    }
+
+}

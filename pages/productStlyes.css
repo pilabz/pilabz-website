@@ -1,0 +1,126 @@
+
+.sectionContainer {
+    background-color: #141414;
+    margin: 0px;
+    min-height: calc(100dvh - 78.64px);
+}
+
+.section {
+    margin: 0px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productTitle {
+    color: #0079D1;
+    margin: 0px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.productDesc {
+    margin: 20px 0px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.productImg {
+    margin: 40px 120px;
+}
+
+.productSubTitle {
+    color: #0079D1;
+    display: block;
+}
+
+.productTable {
+    width: 600px;
+}
+
+.productTable, .productTable th, .productTable td {
+    border: 1px solid #FFFFFF;
+    border-collapse: collapse;
+}
+
+.productTable td span {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+/* Media Queries */
+
+/* Responsive Design Tablet */
+@media (max-width: 991px) {
+    .sectionContainer {
+        min-height: calc(100dvh - 57.05px);
+    }
+
+    .section {
+        margin: 0px 80px;
+    }
+
+    .productTitle {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+
+    .productDesc {
+        margin: 18px 0px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .productImg {
+        margin: 30px 80px;
+    }
+
+    .productTable {
+        width: 500px;
+    }
+
+    .productTable td span {
+        margin: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* Responsive Design Mobile */
+@media (max-width: 768px) {
+    .sectionContainer {
+        min-height: calc(100dvh - 50.91px);
+    }
+
+    .section {
+        margin: 0px 20px;
+    }
+
+    .productTitle {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .productDesc {
+        margin: 15px 0px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .productImg {
+        margin: 20px 40px;
+    }
+
+    .productTable {
+        width: 280px;
+    }
+
+    .productTable td span {
+        margin: 8px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
