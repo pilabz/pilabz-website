@@ -1,0 +1,655 @@
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Zoho Puvi';
+    color: #777777;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Common Animation Keyframes */
+
+@keyframes popFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Header */
+
+.header {
+    background-color: #FFFFFF;
+    color: #777777;
+    /* height: 70px; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.pilabzLogo {
+    /* height: 70px; */
+    width: 98px;
+    padding: 20px;
+    padding-left: 30px;
+    display: inline-block;
+    z-index: 1000;
+    order: 1;
+}
+
+.picadsLogo {
+    margin-right: 3vw;
+    padding: 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0069bd;
+}
+
+.dummyNavDiv {
+    /* height: 70px; */
+    width: 98px;
+    padding: 20px;
+    display: inline-block;
+    z-index: 1000;
+    order: 3;
+}
+
+/* NavBar */
+
+nav {
+    /* background: #ff7070; */
+    /* padding: 12px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: "Roboto", serif; */
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* color: white; */
+    font-size: 16px;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    /* letter-spacing: 2px; */
+    width: 100%;
+    z-index: 2000;
+}
+
+.nav2 {
+    width: 95%;
+    justify-self: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0;
+    list-style: none;
+    order: 3;
+}
+
+.nav2 ul {
+    width: initial;
+}
+
+nav a {
+    color: #777777;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #0079D1;
+    font-weight: 600;
+}
+
+.menuBar {
+    /* float: right; */
+    width: 7%;
+    object-fit: scale-down;
+    z-index: 3000;
+}
+
+.checkbtn {
+    /* float: right; */
+    cursor: pointer;
+    height: 10px;
+    display: none;
+    z-index: 3000;
+    order: 2;
+}
+
+#check, #check1 {
+    display: none;
+}
+
+header nav:first-of-type {
+    transition: opacity 0.3s ease, max-height 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+    max-height: 100px; /* set this to your nav's height */
+    border-bottom: #B5B5B5 1px solid;
+
+}
+
+header nav:first-of-type.hiddenNav {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.auth-buttons button {
+    margin-left: 1.5vw;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 2.5vh;
+    cursor: pointer;
+    font-family: 'Zoho Puvi';
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 4.5vh !important;
+    width: 126px;
+    height: 46px;
+    font-size: 0.8rem;
+    }
+
+.btn-signin {
+    background: transparent;
+    font-weight: 500;
+    color: #0069bd;
+    border: 1.4px solid #0069bd !important;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.btn-signup {
+    background: #0069bd;
+    font-weight: 500;
+    color: white;
+    margin-right: 1vw;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+}
+
+.btn-signup:hover, .btn-signup:active {
+    /* transform: translateY(0.3vh); Simulates the button being pressed down */
+    background-color: #035EA6 !important;
+}
+
+.btn-signin:hover, .btn-signin:active {
+    /* transform: translateY(0.3vh); Simulates the button being pressed down */
+    background-color: #EAF6FF !important;
+    color: #0069bd !important;
+}
+
+.dummyNow {
+    height: 1000vh;
+}
+
+/* Pages */
+
+.pcSectionContainer {
+    background-color: #FFFFFF;
+}
+
+/* Section1  */
+
+.pcSection1 {
+    /* height: calc(100dvh - 78.64px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    color: #0079D1;
+}
+
+.pcTextContainer {
+    z-index: 1;
+}
+
+.pcTextContainer div {
+    margin: 12px 0px;
+}
+
+.pcTitle {
+    font-size: clamp(38px, 4.4vw, 80px);
+}
+
+.pcSubTitle {
+    font-size: clamp(18px, 2.1vw, 38px);
+}
+
+.pcDesc {
+    font-size: clamp(12px, 1vw, 16px);
+    color: #535353;
+    padding: 0 clamp(20px, 15.6vw, 300px);
+    text-align: center;
+}
+
+/* .pcTextContainer button {
+    width: 280px;
+    height: 65px;
+    padding: 22px 60px;
+    background-color: #0079D1;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Zoho Puvi';
+    font-weight: 600;
+    margin-top: 20px;
+} */
+
+.pcTextContainer button {
+    width: clamp(180px, 14.6vw, 280px);
+    height: clamp(45px, 3.4vw, 65px);
+    padding: clamp(12px, 1.15vw, 22px) clamp(25px, 2.8vw, 60px);
+    background-color: #0079D1;
+    color: #FFFFFF;
+    border: none;
+    border-radius: clamp(4px, 0.42vw, 8px);
+    font-size: clamp(14px, 1.04vw, 20px);
+    font-family: 'Zoho Puvi';
+    font-weight: 600;
+    margin-top: clamp(10px, 1.04vw, 20px);
+    cursor: pointer;
+}
+
+/* Test Anim  */
+
+.pcAnimContainer {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    transform-origin: center top; /* Scale from top center */
+}
+
+/* ✅ Scale container on smaller screens */
+/* @media (max-width: 1200px) {
+  .pcAnimContainer {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 992px) {
+  .pcAnimContainer {
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 768px) {
+  .pcAnimContainer {
+    transform: scale(0.6);
+  }
+}
+@media (max-width: 480px) {
+  .pcAnimContainer {
+    transform: scale(0.45);
+  }
+} */
+
+@keyframes fadeFloat {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.8;
+  }
+  20% {
+    transform: translate(-40%, 60%) scale(0.85);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(50%, -50%) scale(1.05);
+    opacity: 0.7;
+  }
+  60% {
+    transform: translate(-60%, -40%) scale(1);
+    opacity: 0.9;
+  }
+  80% {
+    transform: translate(40%, 70%) scale(0.88);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.8;
+  }
+}
+
+.pcGreenLoopImgs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    /* animation: fadeFloat 60s ease-in-out infinite alternate; */
+    /* position: absolute; */
+    -webkit-mask-image: linear-gradient(to bottom,
+    rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,1) 30%, 
+    rgba(0,0,0,1) 70%, 
+    rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(to bottom,
+    rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,1) 30%, 
+    rgba(0,0,0,1) 70%, 
+    rgba(0,0,0,0) 100%);
+}
+
+.pcGreenLoopImg {
+    width: 30%;
+}
+
+.pcGreenLoopImg1 {
+    animation: fadeFloat 50s ease-in-out infinite alternate;
+    animation-delay: 2s;
+}
+
+.pcGreenLoopImg2 {
+    margin-top: 15vh;
+    animation: fadeFloat 50s ease-in-out infinite alternate;
+    animation-delay: 4s;
+}
+
+.pcGreenLoopImg3 {
+    animation: fadeFloat 50s ease-in-out infinite alternate;
+    animation-delay: 8s;
+}
+
+.pcGreenLoopImg4 {
+    margin-top: 15vh;
+    animation: fadeFloat 50s ease-in-out infinite alternate;
+    animation-delay: 6s;
+}
+
+.pcGreenLoopImg5 {
+    animation: fadeFloat 50s ease-in-out infinite alternate;
+    animation-delay: 0s;
+}
+
+.pcMainImgContainer {
+    margin-top: -35vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    background-image: url(../assets/images/pages/heroMainImg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+ /* Top & Bottom gradient */
+    -webkit-mask-image: linear-gradient(to bottom,
+        rgba(0,0,0,0) 0%, 
+        rgba(0,0,0,1) 20%, 
+        rgba(0,0,0,1) 80%, 
+        rgba(0,0,0,0) 100%),
+    /* Left & Right gradient */
+    linear-gradient(to right,
+        rgba(0,0,0,0) 0%, 
+        rgba(0,0,0,1) 5%, 
+        rgba(0,0,0,1) 95%, 
+        rgba(0,0,0,0) 100%);
+
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-composite: intersect; /* Safari/Chrome */
+    
+    mask-image: linear-gradient(to bottom,
+        rgba(0,0,0,0) 0%, 
+        rgba(0,0,0,1) 20%, 
+        rgba(0,0,0,1) 80%, 
+        rgba(0,0,0,0) 100%),
+    linear-gradient(to right,
+        rgba(0,0,0,0) 0%, 
+        rgba(0,0,0,1) 5%, 
+        rgba(0,0,0,1) 95%, 
+        rgba(0,0,0,0) 100%);
+    
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-composite: intersect; /* Firefox */
+}
+
+.pcMainImgContainerMobileWrapper {
+    display: none;
+}
+
+.pcSubImg {
+    height: auto;
+    width: 20vw;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease;
+}
+
+/* Active state triggers animation */
+.pcSubImg.show {
+    animation: popFadeIn 0.8s ease-out forwards;
+}
+
+/* Add delays for each when they get the show class */
+.pcSubImg1.show {
+    animation-delay: 1s;
+}
+
+.pcSubImg2.show {
+    animation-delay: 1.5s;
+}
+
+.pcSubImg4.show {
+    animation-delay: 0.5s;
+}
+
+.pcSubImg1 {
+    margin-right: 25vw;
+    margin-top: 35vh;
+}
+
+.pcSubImg2 {
+    margin-left: 20vw;
+    margin-top: 35vh;
+}
+
+.pcSubImg3 {
+    margin-right: 15vw;
+    margin-top: 20px;
+    margin-bottom: 40vh;
+}
+
+.pcSubImg4 {
+    margin-left: 15vw;
+    margin-top: 20px;
+    margin-bottom: 40vh;
+}
+
+
+/* Media Queries */
+
+/* Responsive Design Tablet */
+@media (max-width: 991px) {
+
+    /* Header */
+
+    .pilabzLogo {
+        /* height: 50px; */
+        width: 68px;
+        padding: 15px;
+        padding-left: 22.5px;
+        display: inline-block;
+        z-index: 1000;
+        order: 1;
+    }
+
+    /* NavBar */
+
+    nav {
+        font-size: 13px;
+    }
+
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0;
+    list-style: none;
+    order: 3;
+    }
+}
+
+
+/* Responsive Design Mobile */
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .pilabzLogo {
+        /* height: 50px; */
+        width: 78px;
+        padding: 10px;
+        padding-left: 15px;
+        display: inline-block;
+        z-index: 1000;
+        order: 1;
+    }
+
+    .dummyNavDiv {
+        display: none;
+    }
+
+    /* NavBar */
+
+    nav {
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    header nav:first-of-type {
+        display: none !important;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        /* margin-top: 180px; */
+        margin-bottom: 10px;
+        padding: 10px;
+        order: 3;
+        width: 100%;
+        z-index: 3000;
+    }
+
+    .nav2 ul {
+        margin: auto;
+    }
+    
+    nav ul li {
+        display: block;
+        padding: 5px;
+    }
+    
+    .checkbtn {
+        /* float: right; */
+        cursor: pointer;
+        display: block;
+        /* width: 5%; */
+        margin-right: 10px;
+        z-index: 1000;
+        order: 2;
+    }
+    
+    #check:checked nav, #check1:checked nav {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #check:checked ~ ul, #check1:checked ~ ul {
+        display: flex;
+    }
+
+    /* Section 1 */
+
+    .pcSection1 {
+        margin-top: 40px;
+    }
+
+    .pcMainImgContainer {
+        display: none;
+    }
+
+    .pcMainImgContainerMobileWrapper {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        background-image: url(../assets/images/pages/heroBlueBgImg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .pcMainImgContainerMobile {
+        width: 75%;
+        margin: 10% 12.5%;
+        overflow: hidden;
+    }
+
+    .carouselTrack {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carouselImg {
+        width: 100%;
+        flex-shrink: 0;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .carouselDots {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .dot {
+        height: 7px;
+        width: 7px;
+        margin: 0 4px;
+        background-color: #D9D9D9;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+
+    .dot.active {
+        width: 15px;
+        border-radius: 20px;
+        background-color: #0079D1;
+    }
+
+}

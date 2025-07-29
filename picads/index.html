@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiCADS</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav1">
+            <input type="checkbox" id="check" />
+
+            <img src="/assets/PilabzLogo.svg" alt="CEET Logo" class="pilabzLogo" onclick="window.location.href='#'">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#products">Products</a></li>
+                <li><a href="/index.html#about">About Us</a></li>
+                <li><a href="/index.html#careers">Careers</a></li>
+                <li><a href="/index.html#contact">Contact Us</a></li>
+            </ul>
+            <label for="check" class="checkbtn">
+                <!-- <img class="menuBar" src="menu-bar.png" alt="menu-bar" /> -->
+                <img src="/assets/icons/handBurgerIcon.svg" alt="Navbar Options List Icon" class="handBurgerIcon">
+            </label>
+
+            <div class="dummyNavDiv"></div>
+        </nav>
+
+        <nav class="nav2">
+            <input type="checkbox" id="check1" />
+
+            <img src="/assets/picadsLogo-cropped.svg" alt="PiCADS Logo" class="picadsLogo" onclick="window.location.href='#'">
+            <!-- Buttons -->
+            <ul class="auth-buttons">
+                <li><button id="signin-btn" onclick="window.location.href='https://auth.picads.in:9443/realms/keycloack_local/protocol/openid-connect/auth?client_id=keycloak_client_local&redirect_uri=https%3A%2F%2Ftest.picads.in%3A444%2F&state=8847e665-5849-4fd8-b314-b010a2e13955&response_mode=fragment&response_type=code&scope=openid&nonce=f0a7e446-1edc-4e0a-b097-bfe795149e9f&code_challenge=gav5ZxHPBTmkLelRpara-3nXz8PtgjLyXnn_NO1x2F4&code_challenge_method=S256'" class="btn btn-outline-primary btn-signin me-2">Sign In</button></li>
+                <li><button id="signup-btn" onclick="window.location.href='https://auth.picads.in:9443/realms/keycloack_local/login-actions/registration?client_id=keycloak_client_local&tab_id=bt8WiTLgGd4&client_data=eyJydSI6Imh0dHBzOi8vdGVzdC5waWNhZHMuaW46NDQ0LyIsInJ0IjoiY29kZSIsInJtIjoiZnJhZ21lbnQiLCJzdCI6Ijg4NDdlNjY1LTU4NDktNGZkOC1iMzE0LWIwMTBhMmUxMzk1NSJ9'" class="btn btn-primary btn-signup">Sign Up</button></li>
+            </ul>
+            <label for="check1" class="checkbtn">
+                <!-- <img class="menuBar" src="menu-bar.png" alt="menu-bar" /> -->
+                <img src="/assets/icons/handBurgerIcon.svg" alt="Navbar Options List Icon" class="handBurgerIcon">
+            </label>
+        </nav>
+    </header>
+
+    <div class="pcSectionContainer">
+        <div class="pcSection1">
+            <div class="pcTextContainer">
+                <div class="pcTitle">Effortlessly</div>
+                <div class="pcSubTitle">DESIGN  |  SIMULATE  |  ANALYZE</div>
+                <div class="pcDesc">Pi-CADS – Motor is a cloud-based 2D axisymmetric motor design and simulation platform tailored for both the EV industry and broader applications across appliances and machinery. It enables rapid motor design, analysis, and optimization for manufacturers seeking performance and efficiency.</div>
+                <button onclick="window.open('https://auth.picads.in:9443/realms/keycloack_local/login-actions/registration?client_id=keycloak_client_local&tab_id=bt8WiTLgGd4&client_data=eyJydSI6Imh0dHBzOi8vdGVzdC5waWNhZHMuaW46NDQ0LyIsInJ0IjoiY29kZSIsInJtIjoiZnJhZ21lbnQiLCJzdCI6Ijg4NDdlNjY1LTU4NDktNGZkOC1iMzE0LWIwMTBhMmUxMzk1NSJ9', '_blank')">Access Pi-CADS</button>
+            </div>
+            <div class="pcAnimContainer">
+                <div class="pcGreenLoopImgs">
+                    <img class="pcGreenLoopImg pcGreenLoopImg1" src="../assets/images/pages/greenLoopImg1.svg" alt="Green Loop Image">
+                    <img class="pcGreenLoopImg pcGreenLoopImg2" src="../assets/images/pages/greenLoopImg1.svg" alt="Green Loop Image">
+                    <img class="pcGreenLoopImg pcGreenLoopImg3" src="../assets/images/pages/greenLoopImg1.svg" alt="Green Loop Image">
+                    <img class="pcGreenLoopImg pcGreenLoopImg4" src="../assets/images/pages/greenLoopImg1.svg" alt="Green Loop Image">
+                    <img class="pcGreenLoopImg pcGreenLoopImg5" src="../assets/images/pages/greenLoopImg1.svg" alt="Green Loop Image">
+                </div>
+                <div class="pcMainImgContainer">
+                    <div>
+                        <img class="pcSubImg pcSubImg1" src="../assets/images/pages/heroSubImg1.svg" alt="Hero Sub Image 1">
+                        <img class="pcSubImg pcSubImg2" src="../assets/images/pages/heroSubImg2.svg" alt="Hero Sub Image 2">
+                    </div>
+                    <div>
+                        <img class="pcSubImg pcSubImg3" src="../assets/images/pages/heroSubImg3.svg" alt="Hero Sub Image 3">
+                        <img class="pcSubImg pcSubImg4" src="../assets/images/pages/heroSubImg4.svg" alt="Hero Sub Image 4">
+                    </div>
+                </div>
+                <div class="pcMainImgContainerMobileWrapper">
+                    <div class="pcMainImgContainerMobile">
+                        <div class="carouselTrack">
+                            <img src="../assets/images/pages/heroSliderImg1.svg" class="carouselImg" />
+                            <img src="../assets/images/pages/heroSliderImg2.svg" class="carouselImg" />
+                            <img src="../assets/images/pages/heroSliderImg3.svg" class="carouselImg" />
+                            <img src="../assets/images/pages/heroSliderImg4.svg" class="carouselImg" />
+                            <img src="../assets/images/pages/heroSliderImg5.svg" class="carouselImg" />
+                            <!-- Add more images as needed (Don't forgot to add dots respective to the image) -->
+                        </div>
+                        <div class="carouselDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dummyNow">
+        
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
