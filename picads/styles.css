@@ -583,6 +583,97 @@ header nav:first-of-type.hiddenNav {
     padding: clamp(10px, 1.04vw, 20px);
 }
 
+/* Section 4 */
+
+.pcSection4 {
+    margin-top: clamp(40px, 11vw, 75px);
+    position: relative;
+}
+
+.pcOval {
+    height: 300px;
+    padding: clamp(80px, 5vw, 400px) 0px;
+    background-color: #EAF4FC;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.pcSubSection4 {
+    position: absolute;
+    top: clamp(100px, 18.5vh, 200px);
+    left: 0;
+}
+
+.pcSecSubContainer {
+    color: #222222;
+    text-align: center;
+    /* background-color: #EAF4FC; */
+}
+
+.pcSecSubTitle {
+    font-size: clamp(18px, 1.56vw, 30px);
+    font-weight: bold;
+    line-height: clamp(18px, 1.8vw, 40px);
+    padding: clamp(10px, 1.04vw, 20px) 0px;
+}
+
+.pcSecSubDetails {
+    font-size: clamp(10px, 1.04vw, 20px);
+    font-weight: 500;
+    line-height: clamp(16px, 1vw, 33px);
+    margin: 0px clamp(40px, 15vw, 250px) clamp(10px, 1.04vw, 20px);
+}
+
+.pcWhyContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: clamp(30px, 3.12vw, 50px) clamp(10px, 1.56vw, 30px);
+    padding: clamp(24px, 3.12vw, 60px) clamp(5px, 1.04vw, 20px);
+    background-color: #EAF4FC;
+}
+
+.pcWhy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: clamp(165px, 30vw, 350px);
+    background-color: rgba(0, 121, 209, 0.12);
+    border-radius: 10px;
+    padding: clamp(10px, 1.04vw, 20px);
+    position: relative;
+}
+
+.pcWhyTitle {
+    font-size: clamp(14px, 1.3vw, 25px);
+    font-weight: 600;
+    color: #0079D1;
+    line-height: clamp(20px, 2.08vw, 40px);
+    margin: clamp(10px, 1.04vw, 20px) 0px 0px;
+}
+
+.pcWhyDetails {
+    font-size: clamp(10px, 1.04vw, 20px);
+    font-weight: 600;
+    color: #000000;
+    line-height: clamp(14px, 1.72vw, 33px);
+    margin: clamp(10px, 1.04vw, 20px) 0px;
+}
+
+.pcWhyImg {
+    width: clamp(20px, 1.82vw, 35px);
+    height: clamp(20px, 1.82vw, 35px);
+    background-color: #0079D1;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: clamp(-24px, -1.25vw, -20px);
+    overflow: visible;
+    /* padding: clamp(10px, 1.04vw, 20px); */
+}
 
 /* Media Queries */
 
@@ -790,6 +881,25 @@ header nav:first-of-type.hiddenNav {
 
     .pcUnique {
         width: 90%;
+    }
+
+    /* Section 4 */
+
+    .pcOval {
+        height: 50px;
+        padding: clamp(80px, 15vw, 300px) 0px;
+        background-color: #EAF4FC;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    .pcSubSection4 {
+        margin-top: -70px;
+    }
+
+    .pcWhyContainer {
+        padding-top: 100px;
+        margin-top: -70px;
     }
 
 }
