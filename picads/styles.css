@@ -16,6 +16,10 @@ a {
     color: inherit;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 /* Common Animation Keyframes */
 
 @keyframes popFadeIn {
@@ -56,6 +60,7 @@ a {
     display: inline-block;
     z-index: 1000;
     order: 1;
+    cursor: pointer;
 }
 
 .picadsLogo {
@@ -64,6 +69,7 @@ a {
     font-size: 1.5rem;
     font-weight: bold;
     color: #0069bd;
+    cursor: pointer;
 }
 
 .dummyNavDiv {
@@ -199,14 +205,18 @@ header nav:first-of-type.hiddenNav {
     color: #0069bd !important;
 }
 
-.dummyNow {
+/* .dummyNow {
     height: 1000vh;
-}
+} */
 
 /* Pages */
 
 .pcSectionContainer {
     background-color: #FFFFFF;
+}
+
+.pcSection {
+    scroll-margin-top: 80px;
 }
 
 /* Section1  */
@@ -240,6 +250,7 @@ header nav:first-of-type.hiddenNav {
 
 .pcDesc {
     font-size: clamp(12px, 1vw, 16px);
+    line-height: clamp(20px, 1.72vw, 33px);
     color: #535353;
     padding: 0 clamp(20px, 15.6vw, 300px);
     text-align: center;
@@ -453,10 +464,11 @@ header nav:first-of-type.hiddenNav {
 
 .pcSecTitle {
     font-size: clamp(24px, 2.08vw, 40px);
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     color: #0079D1;
     margin: 0px clamp(60px, 3.13vw, 80px) clamp(25px, 2.08vw, 40px);
+    white-space: pre-wrap;
 }
 
 .pcFeaturesContainer {
@@ -485,17 +497,17 @@ header nav:first-of-type.hiddenNav {
 }
 
 .pcFeatureTitle {
-    font-size: clamp(20px, 1.82vw, 35px);
+    font-size: clamp(16px, 1.82vw, 35px);
     font-weight: 600;
     color: #000000;
     line-height: clamp(24px, 2.08vw, 40px);
 }
 
 .pcFeatureDetails {
-    font-size: clamp(14px, 1.04vw, 20px);
+    font-size: clamp(12px, 1.04vw, 20px);
     font-weight: 600;
     line-height: clamp(20px, 1.72vw, 33px);
-    margin: clamp(20px, 2.08vw, 40px) 0px;
+    margin: clamp(10px, 2.08vw, 40px) 0px 0px;
 }
 
 .pcFeatureDetails ul {
@@ -568,10 +580,10 @@ header nav:first-of-type.hiddenNav {
 }
 
 .pcUniqueDetails {
-    font-size: clamp(10px, 1.04vw, 20px);
+    font-size: clamp(12px, 1.04vw, 20px);
     font-weight: 600;
     line-height: clamp(20px, 1.72vw, 33px);
-    margin: clamp(20px, 2.08vw, 40px) 0px 0px;
+    margin: clamp(10px, 2.08vw, 40px) 0px 0px;
 }
 
 .pcUniqueDetails ul {
@@ -721,12 +733,13 @@ header nav:first-of-type.hiddenNav {
 .pcFooter {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: stretch;
     padding: clamp(24px, 3.12vw, 80px);
     background-color: #0079D1;
     color: #FFFFFF;
     font-size: clamp(10px, 1.04vw, 20px);
     font-weight: 500;
+    cursor: pointer;
 }
 
 .pcFooterLeft {
@@ -943,10 +956,6 @@ header nav:first-of-type.hiddenNav {
         width: 90%;
         background-color: #EAF4FC;
         border-radius: 10px;
-    }
-
-    .pcFeatureTitle {
-        text-align: center;
     }
 
     .pcFeatureContent, .pcFeatureImg {

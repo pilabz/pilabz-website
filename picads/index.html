@@ -12,7 +12,7 @@
         <nav class="nav1">
             <input type="checkbox" id="check" />
 
-            <img src="/assets/PilabzLogo.svg" alt="CEET Logo" class="pilabzLogo" onclick="window.location.href='#'">
+            <img src="/assets/PilabzLogo.svg" alt="CEET Logo" class="pilabzLogo" onclick="window.location.href='/index.html'">
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/index.html#products">Products</a></li>
@@ -45,7 +45,7 @@
     </header>
 
     <div class="pcSectionContainer">
-        <div class="pcSection1">
+        <div class="pcSection pcSection1">
             <div class="pcTextContainer">
                 <div class="pcTitle">Effortlessly</div>
                 <div class="pcSubTitle">DESIGN  |  SIMULATE  |  ANALYZE</div>
@@ -92,8 +92,8 @@
             </div>
         </div>
 
-        <div class="pcSection2">
-            <div class="pcSecTitle">Powerful Features of Pi-CADS MOTOR</div>
+        <div class="pcSection pcSection2" id="features">
+            <div class="pcSecTitle">Powerful Features of <span class="no-wrap">Pi-CADS</span> MOTOR</div>
 
             <div class="pcFeaturesContainer">
                 <div class="pcFeature pcFeature1">
@@ -152,8 +152,8 @@
             </div>
         </div>
 
-        <div class="pcSection3">
-            <div class="pcSecTitle">What Makes Pi-CADS – Motor Unique?</div>
+        <div class="pcSection pcSection3" id="unique">
+            <div class="pcSecTitle">What Makes <span class="no-wrap">Pi-CADS - Motor</span> Unique?</div>
 
             <div class="pcUniqueContainer">
                 <div class="pcUnique pcUnique1">
@@ -216,7 +216,7 @@
             </div>
         </div>
 
-        <div class="pcSection4">
+        <div class="pcSection pcSection4" id="power">
             <div class="pcSecTitle">Why Pi-CADS Motor?</div>
 
             <div class="pcOval"></div>
@@ -263,7 +263,7 @@
             </div>
         </div>
 
-        <div class="pcSection5">
+        <div class="pcSection pcSection5" id="target">
             <div class="pcSecTitle">Who it's for?</div>
 
             <img class="pcTargetImg" src="../assets/icons/pages/whoItsForIcon.svg" alt="Who it's for?">
@@ -288,17 +288,24 @@
             <img class="pcFooterImg" src="/assets/picadsLogoWhite-cropped.svg" alt="PiCADS Logo" class="picadsLogo" onclick="window.location.href='#'">
             <div class="pcContactContainer">
                 <div class="pcContactTitle">Contact us:</div>
-                <div>support@picads.in</div>
-                <div>9876543210</div> 
+                <div>
+                    <a href="mailto:support@picads.in?subject=Request%20for%20Demo&body=Hi%20Team%2C%0A%0AI%20came%20across%20Pi-CADS%20and%20am%20interested%20in%20learning%20more.%20Could%20you%20please%20arrange%20a%20demo%20for%20me%3F%0A%0AThank%20you.">
+                        support@picads.in
+                    </a>
+                </div>
+
+                <div>
+                    <a href="tel:9876543210">9876543210</a>
+                </div>
             </div>
         </div>
 
         <div class="pcFooterRight">
-            <div>Home</div>
-            <div>Features</div>
-            <div>Unique Values</div>
-            <div>Power of Pi-CADS</div>
-            <div>Target Audience</div>
+            <div><a href="#">Home</a></div>
+            <div><a href="#features">Features</a></div>
+            <div><a href="#unique">Unique Values</a></div>
+            <div><a href="#power">Power of Pi-CADS</a></div>
+            <div><a href="#target">Target Audience</a></div>
         </div>
     </footer>
 
