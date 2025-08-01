@@ -211,6 +211,10 @@ nav a.active {
     background-color: #141414;
 }
 
+.section {
+    scroll-margin-top: 78px;
+}
+
 /* Section1  */
 
 .section1 {
@@ -1091,6 +1095,11 @@ nav a.active {
     }
 
     /* Pages */
+
+    .section {
+        scroll-margin-top: 50px;
+    }
+
     /* Section1 */
 
     .section1 {
