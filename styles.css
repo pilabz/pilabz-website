@@ -965,6 +965,7 @@ nav a.active {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .teamPics {
@@ -2033,6 +2034,7 @@ nav a.active {
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 
     /* Section6 - Contact */

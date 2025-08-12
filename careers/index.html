@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilabz Careers</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://static.zohocdn.com/recruit/embed_careers_site/css/v1.1/embed_jobs.css" type="text/css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <input type="checkbox" id="check" />
+
+            <img src="/assets/PilabzLogo.svg" alt="CEET Logo" class="pilabzLogo" onclick="window.location.href='#'">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <label for="check" class="checkbtn">
+                <!-- <img class="menuBar" src="menu-bar.png" alt="menu-bar" /> -->
+                <img src="/assets/icons/handBurgerIcon.svg" alt="Navbar Options List Icon" class="handBurgerIcon">
+            </label>
+
+            <div class="dummyNavDiv"></div>
+        </nav>
+    </header>
+    <br><br><br>
+    <div class="embed_jobs_head embed_jobs_with_style_3">
+        <div class="embed_jobs_head2">
+            <div class="embed_jobs_head3">
+                <div id="rec_job_listing_div"> </div>
+                <script type="text/javascript" src="https://static.zohocdn.com/recruit/embed_careers_site/javascript/v1.1/embed_jobs.js"></script>
+                <script type="text/javascript">
+                rec_embed_js.load({
+                    widget_id:"rec_job_listing_div",
+                    page_name:"Careers",
+                    source:"CareerSite",
+                    site:"https://pilabz.zohorecruit.in",
+                    brand_color:"#6875E2",
+                    empty_job_msg:"No current Openings"
+                });
+                </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
