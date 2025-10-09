@@ -92,6 +92,9 @@
 }
 
 /* Home Alert */
+.homeAlertCloseBtn {
+    display: none;
+}
 
 .homeAlert {
     position: absolute;
@@ -1148,6 +1151,99 @@ nav a.active {
 /* Responsive Design Tablet */
 @media (max-width: 991px) {
 
+    /* Home Alert */
+
+    .homeAlertCloseBtn {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+        background-color: #FF605C;
+        border-radius: 50%;
+    }
+
+    .homeAlertDarkBackdrop {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 999;
+    }
+
+    .homeAlert {
+        position: fixed !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 200px;
+        max-width: 250px;
+        /* scale: 0.75; */
+        margin: 0px;
+        /* margin-top: 55px; */
+        padding: 15px;
+        z-index: 1000;
+        background: linear-gradient(to bottom left, #0420CC, #020003);
+        color: white;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 3px solid white; /* make room for animated border */
+        background-clip: padding-box;
+        position: absolute; /* for pseudo-element positioning */
+        overflow: visible; /* allow pseudo-element to overflow for border */
+        }
+        
+        .homeAlert::before {
+        content: "";
+        position: absolute;
+        top: -3px; left: -3px; right: -3px; bottom: -3px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #222, rgba(0,121,209,0.5), #222);
+        background-size: 200% 200%;
+        animation: gradientMove 3s linear infinite;
+        z-index: -1;
+        }
+        
+        .alertTitle {
+        font-size: 16px;
+        margin-bottom: 15px;
+        }
+        
+        .alertContent {
+        display: flex;
+        align-items: flex-end;
+        font-size: 10px;
+        letter-spacing: 2px;
+        }
+        
+        .alertContent div img {
+        max-width: 75px;
+        }
+        
+        .alertContent > img {
+        max-width: 95px;
+        }
+        
+        .alertContent button {
+        background-color: #000;
+        color: #fff;
+        border: #0079D1 solid 1px;
+        border-radius: 41px;
+        font-size: 12px;
+        padding: 8px 16px;
+        font-family: 'Zoho Puvi';
+        cursor: pointer;
+        }
+ 
     /* Header */
 
     .pilabzLogo {

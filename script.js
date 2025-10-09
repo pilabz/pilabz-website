@@ -120,3 +120,19 @@ dots.forEach((dot, i) => {
   });
 });
 
+// Home Alert Close Button
+document.addEventListener('DOMContentLoaded', function () {
+    const closeBtn = document.querySelector('.homeAlertCloseBtn');
+    const homeAlert = document.querySelector('.homeAlert');
+    const darkBackdrop = document.querySelector('.homeAlertDarkBackdrop');
+
+    closeBtn.addEventListener('click', function () {
+        homeAlert.style.display = 'none';
+        darkBackdrop.style.display = 'none';
+    });
+
+    // darkBackdrop.addEventListener('click', function () {
+    //     homeAlert.style.display = 'none';
+    //     darkBackdrop.style.display = 'none';
+    // });
+});
