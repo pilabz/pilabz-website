@@ -1,0 +1,294 @@
+
+.sectionContainer {
+    background-color: #141414;
+    margin: 0px;
+    min-height: calc(100dvh - 78.64px);
+}
+
+.section {
+    margin: 0px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productTopSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productTopSection button {
+    padding: 14px 20px;
+    background: #0079D1;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Zoho Puvi';
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.productTopSection button:hover {
+    background: #117bd0;
+}
+
+.productTitle {
+    color: #0079D1;
+    margin: 0px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.productDesc {
+    margin: 20px 0px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.productImg {
+    margin: 40px 120px;
+}
+
+.productSubTitle {
+    color: #0079D1;
+    display: block;
+}
+
+.productSubTitleT1 {
+    color: #FFFFFF;
+    font-size: 20px;
+    display: block;
+}
+
+.productTable {
+    width: 600px;
+}
+
+.productTable, .productTable th, .productTable td {
+    border: 1px solid #FFFFFF;
+    border-collapse: collapse;
+}
+
+.productTable td span {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.productListTitle {
+    color: #0079D1;
+}
+
+.productFooterBox {
+    border: #FFFFFF solid 1px;
+    border-radius: 5px;
+    padding: 64px;
+    display: flex;
+}
+
+.productFooterLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productFooterLeft div {
+    width: 80%;
+}
+
+.productFooterRight {
+    width: 50%;
+}
+
+.productFooterTitle {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.productFooterDesc {
+    font-size: 20px;
+}
+
+.contact-form {
+    /* width: 350px; */
+    /* margin: 60px auto; */
+    background: transparent;
+    /* padding: 20px; */
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #fff;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0;
+    margin-bottom: 32px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+.contact-form button {
+    width: 100%;
+    padding: 14px 0;
+    background: #0079D1;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.contact-form button:hover {
+    background: #117bd0;
+}
+
+/* Media Queries */
+
+/* Responsive Design Tablet */
+@media (max-width: 991px) {
+    .sectionContainer {
+        min-height: calc(100dvh - 57.05px);
+    }
+
+    .section {
+        margin: 0px 80px;
+    }
+
+    .productTopSection button {
+        padding: 10px 15px;
+        background: #0079D1;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-family: 'Zoho Puvi';
+        font-size: 0.75rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .productTopSection button:hover {
+        background: #117bd0;
+    }
+
+    .productTitle {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+
+    .productSubTitleT1 {
+        color: #FFFFFF;
+        font-size: 16px;
+        display: block;
+    }
+
+    .productDesc {
+        margin: 18px 0px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .productImg {
+        margin: 30px 80px;
+    }
+
+    .productTable {
+        width: 500px;
+    }
+
+    .productTable td span {
+        margin: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .productFooterBox {
+        border: #FFFFFF solid 1px;
+        border-radius: 5px;
+        padding: 64px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productFooterLeft {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .productFooterLeft div {
+        width: 100%;
+    }
+
+    .productFooterLeftTop {
+        margin-bottom: 10px;
+    }
+
+    .productFooterRight {
+        width: 100%;
+    }
+
+    .productFooterTitle {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .productFooterDesc {
+        font-size: 16px;
+    }
+}
+
+/* Responsive Design Mobile */
+@media (max-width: 768px) {
+    .sectionContainer {
+        min-height: calc(100dvh - 50.91px);
+    }
+
+    .section {
+        margin: 0px 20px;
+    }
+
+    .productTitle {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .productDesc {
+        margin: 15px 0px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .productImg {
+        margin: 20px 40px;
+    }
+
+    .productTable {
+        width: 280px;
+    }
+
+    .productTable td span {
+        margin: 8px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

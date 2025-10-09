@@ -9,9 +9,11 @@
 //     }
 // });
 
+let snapped = false;
+
 window.addEventListener('scroll', () => {
     const firstNav = document.querySelector('header nav:first-of-type');
-    if (window.scrollY >= window.innerHeight) {
+    if (window.scrollY >= window.innerHeight/8) {
         firstNav.classList.add('hiddenNav');
     } else {
         firstNav.classList.remove('hiddenNav');
