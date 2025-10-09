@@ -16,7 +16,7 @@
     justify-content: space-between;
 }
 
-.productTopSection button {
+.registerNowBtn {
     padding: 14px 20px;
     background: #0079D1;
     border: none;
@@ -29,7 +29,7 @@
     transition: background 0.2s;
 }
 
-.productTopSection button:hover {
+.registerNowBtn:hover {
     background: #117bd0;
 }
 
@@ -81,6 +81,13 @@
 
 .productListTitle {
     color: #0079D1;
+}
+
+.productConclusionBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .productFooterBox {
@@ -171,7 +178,7 @@
         margin: 0px 80px;
     }
 
-    .productTopSection button {
+    .registerNowBtn {
         padding: 10px 15px;
         background: #0079D1;
         border: none;
@@ -184,7 +191,7 @@
         transition: background 0.2s;
     }
 
-    .productTopSection button:hover {
+    .registerNowBtn:hover {
         background: #117bd0;
     }
 
@@ -222,7 +229,7 @@
     .productFooterBox {
         border: #FFFFFF solid 1px;
         border-radius: 5px;
-        padding: 64px;
+        padding: 44px;
         display: flex;
         flex-direction: column;
     }
