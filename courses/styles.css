@@ -63,6 +63,10 @@
     display: block;
 }
 
+.dateTime {
+    font-weight: 600;
+}
+
 .productTable {
     width: 600px;
 }
