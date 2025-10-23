@@ -63,6 +63,12 @@
     display: block;
 }
 
+.endMessage {
+    color: red;
+    max-width: 600px;
+    text-align: right;
+}
+
 .dateTime {
     font-weight: 600;
 }
@@ -210,6 +216,11 @@
         display: block;
     }
 
+    .endMessage {
+        max-width: 400px;
+        font-size: 14px;
+    }
+
     .productDesc {
         margin: 18px 0px;
         font-size: 16px;
@@ -281,6 +292,11 @@
     .productTitle {
         padding-top: 20px;
         font-size: 18px;
+    }
+
+    .endMessage {
+        max-width: 300px;
+        font-size: 12px;
     }
 
     .productDesc {
