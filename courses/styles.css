@@ -11,6 +11,29 @@
     flex-direction: column;
 }
 
+.info-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #CE1820;
+    background-color: #17232B;
+    /* white-space: nowrap; */
+    position: absolute;
+    padding: 0px 5px;
+    top: 100px;
+    width: calc(100% - 10px);
+    height: 42px;
+    /* line-height: 38px; */
+    overflow: hidden;
+    /* animation: loop 30s linear infinite; */
+}
+
+.info-note p {
+    margin: 0;
+    line-height: 18px;
+}
+
 .productTopSection {
     display: flex;
     justify-content: space-between;
@@ -188,6 +211,23 @@
         margin: 0px 80px;
     }
 
+    .info-note {
+        /* white-space: nowrap; */
+        position: absolute;
+        padding: 0px 5px;
+        top: 100px;
+        height: 42px;
+        /* line-height: 38px; */
+        overflow: hidden;
+        /* animation: loop 30s linear infinite; */
+    }
+
+    .info-note p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
     .registerNowBtn {
         padding: 10px 15px;
         background: #0079D1;
@@ -287,6 +327,23 @@
 
     .section {
         margin: 0px 20px;
+    }
+
+    .info-note {
+        /* white-space: nowrap; */
+        position: absolute;
+        padding: 0px 5px;
+        top: 70px;
+        height: 72px;
+        /* line-height: 38px; */
+        overflow: hidden;
+        /* animation: loop 30s linear infinite; */
+    }
+
+    .info-note p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .productTitle {
