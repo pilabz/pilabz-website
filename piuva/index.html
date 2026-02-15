@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pi-UVA | Pilabz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:#fff;
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#0ea5e9,#2563eb);
+    padding:60px 10%;
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.hero-text h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:18px;
+    max-width:500px;
+}
+
+.hero-image img{
+    max-width:350px;
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+    transition:.4s;
+}
+.hero-image img:hover{
+    transform:scale(1.05);
+}
+
+/* BUTTONS */
+.btn{
+    padding:9px 20px;
+    font-size:14px;
+    border-radius:25px;
+    margin:15px 8px 0 0;
+    font-weight:600;
+    transition:.3s ease;
+    cursor:pointer;
+    border:2px solid transparent;
+    text-decoration:none;
+}
+
+.btn-primary{
+    background:#ffffff;
+    color:#0f172a;
+}
+.btn-primary:hover{
+    background:transparent;
+    color:#fff;
+    border:2px solid #fff;
+}
+
+.btn-secondary{
+    background:transparent;
+    color:#fff;
+    border:2px solid #fff;
+}
+.btn-secondary:hover{
+    background:#fff;
+    color:#0f172a;
+}
+
+/* SECTIONS */
+section{
+    padding:70px 10%;
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 1s ease;
+}
+section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+/* VIDEO */
+.video-container{
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+}
+.video-container iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius:12px;
+}
+
+/* FEATURES */
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+    background:#334155;
+}
+
+/* WHY SECTION */
+.why-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:70px;
+    flex-wrap:wrap;
+}
+.why-item:nth-child(even){
+    flex-direction:row-reverse;
+}
+.why-text{
+    flex:1;
+}
+.why-image{
+    flex:1;
+    text-align:center;
+}
+.why-image img{
+    max-width:400px;
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.4);
+    transition:.4s;
+}
+.why-image img:hover{
+    transform:scale(1.05);
+}
+
+/* SPECS */
+.specs{
+    background:#111827;
+    padding:40px;
+    border-radius:15px;
+}
+.specs ul{
+    list-style:none;
+    padding:0;
+}
+.specs li{
+    padding:8px 0;
+    border-bottom:1px solid #334155;
+}
+
+/* FOOTER */
+footer{
+    background:#020617;
+    text-align:center;
+    padding:30px;
+    font-size:14px;
+}
+
+/* MODAL */
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(6px);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    /* padding:20px; */
+}
+.modal-content{
+    background:#111827;
+    width:95%;
+    max-width:900px;
+    border-radius:12px;
+    /* padding:20px; */
+}
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.close-btn{
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+}
+.modal iframe{
+    width:90%;
+    max-width:800px;
+    height:400px;
+    display:block;
+    margin:20px auto;
+    border-radius:8px;
+}
+.actions a{
+    padding:8px 14px;
+    background:#0ea5e9;
+    color:#fff;
+    text-decoration:none;
+    border-radius:5px;
+    margin-right:10px;
+}
+
+/* Modal Header Layout */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-bottom: 1px solid #334155;
+}
+
+/* Action Container */
+.pdf-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Icon Button Style */
+.icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #1e293b;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+    background: #334155;
+    transform: translateY(-2px);
+}
+
+/* Optional Close Button Style */
+.close-btn {
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .why-item{
+        flex-direction:column !important;
+    }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 50px 6%;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+
+    .modal iframe {
+        width: 95%;
+        height: 420px;
+    }
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    /* Stack hero properly */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    .hero-image img {
+        max-width: 260px;
+    }
+
+    .btn {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .modal iframe {
+        height: 380px;
+    }
+}
+
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    header {
+        padding: 40px 20px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .specs {
+        padding: 25px;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    .modal iframe {
+        height: 320px;
+    }
+
+    .modal-header h3 {
+        font-size: 14px;
+    }
+
+    .icon-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 20px;
+    }
+}
+
+
+/* Extra large screens */
+@media (min-width: 1400px) {
+
+    header {
+        padding: 80px 15%;
+    }
+
+    section {
+        padding: 90px 15%;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-image img {
+        max-width: 420px;
+    }
+
+    .video-container {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+/* =========================
+   NAVBAR - NAV1
+========================= */
+
+.nav1 {
+    /* width: 100%; */
+    background: #ffffff;
+    padding: 12px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E5E5E5;
+    /* position: sticky; */
+    top: 0;
+    z-index: 2000;
+}
+
+/* Hide checkbox */
+#check {
+    display: none;
+}
+
+/* Logo */
+.pilabzLogo {
+    height: 42px;
+    cursor: pointer;
+}
+
+/* Navigation List */
+.nav1 ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+.nav1 ul li a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav1 ul li a:hover {
+    color: #0079D1;
+}
+
+.nav1 ul li a.active {
+    color: #0079D1;
+    font-weight: 600;
+}
+
+/* Hamburger */
+.checkbtn {
+    display: none;
+    cursor: pointer;
+}
+
+.handBurgerIcon {
+    width: 26px;
+    height: 26px;
+}
+
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+@media (max-width: 992px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    .nav1 ul {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        width: 100%;
+        background: #ffffff;
+        padding: 30px 0;
+        text-align: center;
+        gap: 20px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        transition: 0.3s ease;
+    }
+
+    .nav1 ul li {
+        margin: 10px 0;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* Make nav layout stable */
+.nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Push menu icon fully right */
+.checkbtn {
+    margin-left: auto;
+    display: none;
+}
+
+/* Mobile layout */
+@media (max-width: 992px) {
+
+    .checkbtn {
+        display: block;
+        margin-left: auto;  /* THIS pushes it right */
+    }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<nav class="nav1">
+    <input type="checkbox" id="check" />
+
+    <img src="/assets/PilabzLogo.svg" alt="CEET Logo" class="pilabzLogo" onclick="window.location.href='/'">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#products">Products</a></li>
+        <li><a href="/#about">About Us</a></li>
+        <li><a href="/#careers">Careers</a></li>
+        <li><a href="/courses">Courses</a></li>
+        <li><a href="https://help.pilabz.in/portal/en/kb/picads-motor">Knowledge Base</a></li>
+        <li><a href="/#contact">Contact Us</a></li>
+    </ul>
+    <label for="check" class="checkbtn">
+        <!-- <img class="menuBar" src="menu-bar.png" alt="menu-bar" /> -->
+        <img src="/assets/icons/handBurgerIcon.svg" alt="Navbar Options List Icon" class="handBurgerIcon">
+    </label>
+
+    <div class="dummyNavDiv"></div>
+</nav>
+
+<header>
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Pi-UVA</h1>
+            <p>ONE DEVICE. FOUR INSTRUMENTS. UNLIMITED INSIGHT.</p>
+            <a href="#video" class="btn btn-primary">Watch Demo</a>
+            <button class="btn btn-secondary" onclick="openModal()">Documents</button>
+        </div>
+        <div class="hero-image">
+            <img src="extracted_image_0.jpeg" alt="Pi-UVA">
+        </div>
+    </div>
+</header>
+
+<section id="video">
+    <h2>Product Demo</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/qVbHABOYMCk" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section>
+    <h2>4 Instruments. One Smart System.</h2>
+    <div class="features">
+        <div class="card">
+            <h3>Digital Multimeter</h3>
+            <p>600V CAT III | Auto-ranging | Real-time logging</p>
+        </div>
+        <div class="card">
+            <h3>LCR Meter</h3>
+            <p>1µH–100H | 1pF–10mF | Kelvin 4-wire precision</p>
+        </div>
+        <div class="card">
+            <h3>3-Phase Analyzer</h3>
+            <p>Harmonics up to 10th order | Power factor</p>
+        </div>
+        <div class="card">
+            <h3>Clamp Meter</h3>
+            <p>Up to 200A | CT Clamp Support</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Why Pi-UVA?</h2>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>LOG • SAVE • ANALYZE • SHARE</h3>
+            <p>
+                All your measurements auto-sync to your phone.  
+                No more manual notes.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Reports — Not Just Numbers</h3>
+            <p>
+                Generate motor efficiency reports,  
+                check component pass/fail,  
+                measure harmonic analysis — all in one tap.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Customise Your Workflow</h3>
+            <p>
+                Create templates: Motor Test, Cap Check,  
+                Power Audit — your way, every time.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>No More Cables, No More Guesswork</h3>
+            <p>
+                Real-time data on your phone or tablet  
+                from 10 meters away — even in noisy plants.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Easier than Conventional Tools</h3>
+            <p>
+                Setup in 30 sec (BLE + WiFi)  
+                One connection for all measurements  
+                No switching boxes — just select mode in the app.
+            </p>
+        </div>
+
+    </div>
+
+    <p style="text-align:center;margin-top:40px;font-weight:600;">
+        It’s not a new instrument.  
+        It’s your old instruments — finally working together.
+    </p>
+</section>
+
+<section>
+    <h2>Technical Specifications</h2>
+
+    <div class="specs">
+        <ul>
+            <li><strong>DC Voltage:</strong> 200mV – 600V (±1%)</li>
+            <li><strong>AC Voltage:</strong> 200mV – 600V (45Hz – 1kHz) (±1.2%)</li>
+            <li><strong>DC Current:</strong> 10mA – 5A (direct) (±1.5%)</li>
+            <li><strong>AC Current:</strong> 20A – 200A (CT clamp) (±1.5%)</li>
+            <li><strong>LCR:</strong> 1µH–100H | 1pF–10mF | 1Ω–10MΩ</li>
+            <li><strong>3-Phase:</strong> 100V–600V, 10mA–200A</li>
+            <li><strong>Power Accuracy:</strong> ±1.5%</li>
+            <li><strong>Phase Accuracy:</strong> ±2°</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Connectivity & Power</h2>
+
+    <div class="specs">
+        <ul>
+            <li><strong>Wireless:</strong> WiFi 802.11 b/g/n + BLE 5.0</li>
+            <li><strong>Dimensions:</strong> 140 × 90 × 35 mm</li>
+            <li><strong>Weight:</strong> 450g</li>
+            <li><strong>App Support:</strong> iOS & Android</li>
+            <li><strong>Safety:</strong> CAT II 600V</li>
+            <li><strong>Isolation:</strong> 1500VDC reinforced</li>
+            <li><strong>Power Supply:</strong> 5V / 2A power bank</li>
+            <li><strong>Terminals:</strong> 13 professional banana & audio jacks</li>
+        </ul>
+    </div>
+
+    <p style="text-align:center;margin-top:40px;">
+        Get Started Today — Scan the QR code to download the Magic Box App.
+    </p>
+</section>
+
+
+<footer>
+    © 2026 Pilabz | info@pilabz.in | +91 99629 04035
+</footer>
+
+<!-- PDF MODAL -->
+<div class="modal" id="pdfModal">
+    <div class="modal-content">
+
+        <div class="modal-header">
+            <h3>Pi-UVA User Manual</h3>
+
+            <div class="pdf-actions">
+                <a href="AlphaUserManual.pdf" target="_blank" class="icon-btn" title="Open in New Tab">
+                    🔗
+                </a>
+
+                <a href="AlphaUserManual.pdf" download class="icon-btn" title="Download">
+                    ⬇
+                </a>
+
+                <button class="icon-btn close-btn" onclick="closeModal()" title="Close">
+                    ✕
+                </button>
+            </div>
+        </div>
+
+        <iframe src="AlphaUserManual.pdf"></iframe>
+
+    </div>
+</div>
+
+<script>
+const sections=document.querySelectorAll("section");
+window.addEventListener("scroll",()=>{
+    sections.forEach(sec=>{
+        if(sec.getBoundingClientRect().top<window.innerHeight-100){
+            sec.classList.add("show");
+        }
+    });
+});
+
+function openModal(){
+    document.getElementById("pdfModal").style.display="flex";
+}
+function closeModal(){
+    document.getElementById("pdfModal").style.display="none";
+}
+</script>
+
+</body>
+</html>

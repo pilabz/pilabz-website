@@ -97,6 +97,7 @@
 }
 
 .homeAlert {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -532,6 +533,10 @@ nav a.active {
 
 .piCADImg {
     background-image: url(/assets/images/PiCADSProductImage.svg);
+}
+
+.piUVAImg {
+    background-image: url(/assets/images/piUVAImg.png);
 }
 
 .milliOhmMeterImg {
@@ -1170,7 +1175,7 @@ nav a.active {
     }
 
     .homeAlertDarkBackdrop {
-        display: block;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
