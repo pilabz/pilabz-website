@@ -37,8 +37,8 @@
             <img src="/assets/picadsLogo-cropped.svg" alt="PiCADS Logo" class="picadsLogo" onclick="window.location.href='#'">
             <!-- Buttons -->
             <ul class="auth-buttons">
-                <li><button id="signin-btn" onclick="window.location.href='https://test.picads.in'" class="btn btn-outline-primary btn-signin me-2">Sign In</button></li>
-                <li><button id="signup-btn" onclick="window.location.href='https://auth.picads.in/realms/keycloack_local/protocol/openid-connect/registrations?client_id=keycloak_client_local&redirect_uri=https://test.picads.in/&response_type=code'" class="btn btn-primary btn-signup">Sign Up</button></li>
+                <li><button id="signin-btn" onclick="window.location.href='https://prod.picads.in'" class="btn btn-outline-primary btn-signin me-2">Sign In</button></li>
+                <li><button id="signup-btn" onclick="window.location.href='https://admin.picads.in/realms/keycloack_local/protocol/openid-connect/registrations?client_id=keycloak_client_local&redirect_uri=https://prod.picads.in/&response_type=code'" class="btn btn-primary btn-signup">Sign Up</button></li>
             </ul>
             <label for="check1" class="checkbtn">
                 <!-- <img class="menuBar" src="menu-bar.png" alt="menu-bar" /> -->
@@ -48,12 +48,16 @@
     </header>
 
     <div class="pcSectionContainer">
+        <div class="info-note">
+            <p><strong>Note: </strong>The online servers will ONLY be available from <strong>8:00 AM to 11:00 PM IST</strong> daily. 
+            Please make sure that you log in during these hours. Thank you!!</p>
+        </div>
         <div class="pcSection pcSection1">
             <div class="pcTextContainer">
                 <div class="pcTitle">Effortlessly...</div>
                 <div class="pcSubTitle">DESIGN  |  SIMULATE  |  ANALYZE</div>
                 <div class="pcDesc">Pi-CADS – Motor is a cloud-based 2D axisymmetric motor design and simulation platform tailored for both the EV industry and broader applications across appliances and machinery. It enables rapid motor design, analysis, and optimization for manufacturers seeking performance and efficiency.</div>
-                <button onclick="window.open('https://auth.picads.in/realms/keycloack_local/protocol/openid-connect/registrations?client_id=keycloak_client_local&redirect_uri=https://test.picads.in/&response_type=code', '_blank')">Access Pi-CADS</button>
+                <button onclick="window.open('https://admin.picads.in/realms/keycloack_local/protocol/openid-connect/registrations?client_id=keycloak_client_local&redirect_uri=https://prod.picads.in/&response_type=code', '_blank')">Access Pi-CADS</button>
             </div>
             <div class="pcAnimContainer">
                 <div class="pcGreenLoopImgs">
