@@ -531,6 +531,10 @@ nav a.active {
     overflow: auto;
 }
 
+.piForgeImg {
+    background-image: url(/assets/images/pi-forge-img.png);
+}
+
 .piCADImg {
     background-image: url(/assets/images/PiCADSProductImage.svg);
 }
@@ -1887,6 +1891,10 @@ nav a.active {
         justify-content: flex-end;
         overflow: auto;
         margin-right: 5%;
+    }
+
+    .piForgeImg {
+        background-image: url(/assets/images/pi-forge-img.png);
     }
 
     .piCADImg {
