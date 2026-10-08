@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi-Forge | Pilabz</title>
+    <meta name="description" content="Pi-Forge is Pilabz's unified engineering platform for CAD, CFD, FEA, thermal, electrical and civil design, simulation and product development.">
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav1">
+            <input type="checkbox" id="check" />
+
+            <img src="/assets/PilabzLogo.svg" alt="Pilabz Logo" class="pilabzLogo" onclick="window.location.href='/'">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#products">Products</a></li>
+                <li><a href="/#about">About Us</a></li>
+                <li><a href="/#careers">Careers</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a href="/#contact">Contact Us</a></li>
+            </ul>
+            <label for="check" class="checkbtn">
+                <img src="/assets/icons/handBurgerIcon.svg" alt="Menu" class="handBurgerIcon">
+            </label>
+
+            <div class="dummyNavDiv"></div>
+        </nav>
+
+        <nav class="nav2">
+            <input type="checkbox" id="check1" />
+
+            <a href="/pi-forge" class="piForgeLogo" aria-label="Pilabz Forge">
+                <svg class="piForgeLogo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 31" fill="none" aria-hidden="true">
+                    <path d="M5.03717 0.0523288L18.6131 0.0606812C19.7705 0.0606812 21.6185 0.187081 22.7059 0.0606812C27.0651 -0.441783 31.1099 2.20112 31.0149 7.06279C30.9846 9.03922 30.1614 10.9206 28.7313 12.2838C27.8026 13.1613 26.6494 13.7661 25.4 14.0325C23.7735 14.3898 19.968 14.2644 18.1158 14.2613L8.2452 14.2655C6.92062 18.4972 5.80915 22.822 4.51695 27.0673C4.27773 27.8498 4.04165 28.6917 3.85048 29.4856C2.60842 28.5392 1.19714 27.5437 0 26.5931C1.22743 22.285 2.60947 17.6114 3.74393 13.3096C3.67811 13.1038 2.84451 12.0968 2.59902 11.6654C2.11223 10.907 1.50007 10.0922 0.970446 9.3526C2.05999 9.34215 4.00091 9.27217 5.0027 9.51452C5.91466 9.55735 6.84541 9.55213 7.76154 9.54691C13.2876 9.51244 18.8262 9.64301 24.3491 9.50512C24.7283 9.49572 25.2538 9.18024 25.5358 8.93475C26.0748 8.46154 26.3966 7.7888 26.4269 7.07219C26.4593 6.42348 26.2274 5.78835 25.7834 5.31305C24.7314 4.19948 22.1157 4.5254 20.6115 4.52645L12.3683 4.53272C11.0176 4.54003 9.60426 4.57554 8.24939 4.53584C7.82422 4.52331 7.80229 4.41677 7.56829 4.15457L7.39906 3.8276L5.03717 0.0523288Z" fill="#0079D1"/>
+                    <path d="M4.7714 9.67578C4.43921 10.8426 4.03655 12.1448 3.74406 13.3096C3.67825 13.1038 2.84503 12.0965 2.59953 11.665C2.61519 10.9819 2.05655 10.2827 1.66691 9.73535C2.71559 9.6967 3.71958 9.6528 4.7714 9.67578Z" fill="#0079D1"/>
+                    <path d="M10.3958 17.4303C16.5131 17.5442 22.7955 17.2945 28.9201 17.4491C27.8202 18.969 26.7024 20.4754 25.5669 21.9692C22.9073 22.1217 19.6313 22.035 16.9393 22.0319C15.9135 22.0455 14.8867 22.0402 13.8608 22.0141C13.022 24.749 12.2072 27.49 11.4164 30.2395C9.84218 30.2071 8.22093 30.2207 6.64146 30.2155C7.91694 25.9607 9.16839 21.6987 10.3958 17.4303Z" fill="#0079D1"/>
+                    <path d="M2.46851 5.69946C9.52076 5.9554 16.5772 6.06717 23.6336 6.03687C24.1611 6.03478 24.6176 6.17059 25.1326 6.28863C22.1022 6.43279 18.7312 6.31789 15.6684 6.34818C14.5057 6.35863 11.0041 6.37952 9.9971 6.24267C7.65923 6.24999 5.55955 6.03374 3.14647 6.08806C3.44209 6.5571 3.72831 7.05748 4.01245 7.53592C3.47238 7.03241 2.9365 6.29281 2.46851 5.69946Z" fill="#0079D1"/>
+                    <path d="M1.73285 7.54761C8.78301 7.59462 15.5814 7.85368 22.6995 7.791C23.4673 7.78055 24.046 7.79727 24.8117 7.84532C22.4362 8.34256 18.5001 8.02082 15.9627 8.10962C15.1531 8.13782 11.4938 8.12215 10.7574 8.01664C7.95149 8.025 5.06624 7.94247 2.24784 7.91113C2.4108 8.16393 2.57482 8.35406 2.61034 8.64655C2.23949 8.34675 2.00759 7.94561 1.73285 7.54761Z" fill="#0079D1"/>
+                    <path d="M7.39901 3.82723L7.56824 4.1542C6.40558 4.13749 5.23873 4.10406 4.07815 4.16674L4.00922 4.27432C4.17427 4.54697 4.20142 4.5407 4.22336 4.84991C4.06144 4.88856 3.466 3.98183 3.33543 3.80633C4.55764 3.74052 6.15278 3.8053 7.39901 3.82723Z" fill="#0079D1"/>
+                    <path d="M43.6699 19.5352V10.6572H47.107C48.9333 10.6572 50.0113 11.7606 50.0113 13.3332C50.0113 14.9059 48.9333 16.0093 47.107 16.0093H44.9889V19.5352H43.6699ZM47.0689 14.8679C48.2104 14.8679 48.6543 14.1449 48.6543 13.3332C48.6543 12.5215 48.2104 11.7986 47.0689 11.7986H44.9889V14.8679H47.0689ZM51.1977 19.5352V13.143H52.4279V19.5352H51.1977ZM51.1216 10.4669H52.4913V12.0142H51.1216V10.4669ZM54.2198 19.5352V10.4669H55.45V19.5352H54.2198ZM59.1189 19.6366C57.8126 19.6366 56.9375 18.8503 56.9375 17.7088C56.9375 16.4786 57.9267 15.6669 59.4233 15.6669H60.7677C61.0594 15.6669 61.1989 15.5654 61.1989 15.3371C61.1989 14.5635 60.6282 14.0308 59.6516 14.0308C58.7511 14.0308 58.117 14.5888 58.0789 15.2357H56.9375C57.0389 13.9801 58.1677 13.0415 59.6897 13.0415C61.3384 13.0415 62.4165 13.9927 62.4165 15.4132V19.5352H61.1989V18.4825C60.8818 19.18 60.0828 19.6366 59.1189 19.6366ZM59.3599 18.66C60.514 18.66 61.1989 17.9117 61.1989 16.7322V16.6181H59.5501C58.7131 16.6181 58.1677 17.0113 58.1677 17.6835C58.1677 18.2669 58.637 18.66 59.3599 18.66ZM67.4131 19.6366C66.5507 19.6366 65.739 19.2181 65.3585 18.5839V19.5352H64.1283V10.4669H65.3585V14.0815C65.7517 13.4474 66.5507 13.0415 67.4004 13.0415C69.3282 13.0415 70.4316 14.4493 70.4316 16.3391C70.4316 18.2288 69.3282 19.6366 67.4131 19.6366ZM67.2229 18.5586C68.4024 18.5586 69.1887 17.6708 69.1887 16.3391C69.1887 15.0074 68.4024 14.1196 67.2229 14.1196C66.0434 14.1196 65.257 15.0074 65.257 16.3391C65.257 17.6708 66.0434 18.5586 67.2229 18.5586ZM71.226 19.5352V18.4698L75.0055 14.2084H71.4162V13.143H76.426V14.2084L72.6719 18.4698H76.6035V19.5352H71.226ZM77.1632 16.6181V15.5527H81.1456V16.6181H77.1632ZM82.9804 19.5352V14.2084H81.6741V13.143H82.9804V12.5215C82.9804 11.2659 83.8048 10.4669 85.0858 10.4669H86.1512V11.5323H85.1873C84.5912 11.5323 84.2107 11.9254 84.2107 12.5596V13.143H86.1512V14.2084H84.2107V19.5352H82.9804ZM89.8213 19.6366C87.9061 19.6366 86.5237 18.2542 86.5237 16.3391C86.5237 14.424 87.9061 13.0415 89.8213 13.0415C91.7364 13.0415 93.1061 14.424 93.1061 16.3391C93.1061 18.2542 91.7364 19.6366 89.8213 19.6366ZM89.8213 18.5586C91.0261 18.5586 91.8505 17.6454 91.8505 16.3391C91.8505 15.0327 91.0261 14.1196 89.8213 14.1196C88.6037 14.1196 87.7793 15.0327 87.7793 16.3391C87.7793 17.6454 88.6037 18.5586 89.8213 18.5586ZM94.473 19.5352V13.143H95.7032V14.3732C95.9949 13.5235 96.5022 13.143 97.4027 13.143H98.1764V14.2084H97.2505C96.0837 14.2084 95.7032 15.2484 95.7032 16.6435V19.5352H94.473ZM99.4376 22.1225V21.0951H102.393C103.141 21.0951 103.661 20.5498 103.661 19.7634V18.7235C103.344 19.2688 102.52 19.6366 101.594 19.6366C99.6913 19.6366 98.5879 18.2288 98.5879 16.3391C98.5879 14.4493 99.6786 13.0415 101.606 13.0415C102.431 13.0415 103.255 13.422 103.661 13.9927V13.143H104.891V19.8395C104.891 21.2093 103.953 22.1225 102.52 22.1225H99.4376ZM101.797 18.5586C102.976 18.5586 103.75 17.6708 103.75 16.3391C103.75 15.0074 102.976 14.1196 101.797 14.1196C100.604 14.1196 99.8308 15.0074 99.8308 16.3391C99.8308 17.6708 100.604 18.5586 101.797 18.5586ZM109.462 19.6366C107.484 19.6366 106.266 18.0766 106.266 16.301C106.266 14.5127 107.382 13.0415 109.348 13.0415C111.314 13.0415 112.367 14.4493 112.367 16.0727C112.367 16.2376 112.354 16.4532 112.341 16.5674H107.471C107.573 17.7596 108.359 18.5839 109.462 18.5839C110.401 18.5839 111.01 18.1781 111.187 17.4552H112.418C112.202 18.7742 111.048 19.6366 109.462 19.6366ZM107.509 15.6162H111.124C111.048 14.6396 110.401 14.0308 109.348 14.0308C108.359 14.0308 107.7 14.5762 107.509 15.6162Z" fill="#0079D1"/>
+                </svg>
+            </a>
+            <ul class="auth-buttons">
+                <li><button type="button" onclick="window.location.href='mailto:info@pilabz.in?subject=Pi-Forge%20Sales%20Inquiry'" class="btn-signin">Contact Sales</button></li>
+                <li><button type="button" onclick="document.getElementById('forge-apps').scrollIntoView({behavior:'smooth'})" class="btn-signup">Explore</button></li>
+            </ul>
+            <label for="check1" class="checkbtn">
+                <img src="/assets/icons/handBurgerIcon.svg" alt="Menu" class="handBurgerIcon">
+            </label>
+        </nav>
+    </header>
+
+    <main class="forge-page">
+        <section class="forge-hero" id="forge-hero" aria-label="Pi-Forge introduction">
+            <div class="forge-hero-veil" aria-hidden="true"></div>
+            <div class="forge-hero-frame">
+                <div class="forge-hero-copy">
+                    <h1>One platform for engineering design and simulation.</h1>
+                    <p>
+                        Design, simulate and validate products with connected Pi-CADS applications
+                        for CAD, flow, thermal, structural, electrical and civil work — in the cloud
+                        or on your own infrastructure.
+                    </p>
+                    <div class="forge-hero-meta">
+                        <div class="forge-chips" aria-hidden="true">
+                            <span>CAD</span>
+                            <span>CFD</span>
+                            <span>FEA</span>
+                        </div>
+                        <p>Cloud and on-premises deployment for engineering teams</p>
+                    </div>
+                    <div class="forge-hero-actions">
+                        <a class="forge-pill forge-pill-blue" href="#forge-apps">Explore Pi-Forge</a>
+                        <a class="forge-pill forge-pill-white" href="mailto:info@pilabz.in?subject=Pi-Forge%20Sales%20Inquiry">Contact Sales</a>
+                    </div>
+                </div>
+                <div class="forge-hero-shot">
+                    <img
+                        src="/assets/images/pi-forge-img.png"
+                        alt="Pi-Forge engineering simulation visualisation"
+                        width="684"
+                        height="595"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="forge-statement" id="forge-statement">
+            <p
+                class="forge-statement-text"
+                data-ink-fill
+                aria-label="Pi-Forge is a unified engineering software platform for designing, simulating, analysing, optimising and visualising products across multiple engineering domains. It combines connected workflows with standalone applications for CAD, simulation and product development within an integrated environment."
+            >Pi-Forge is a unified engineering software platform for designing, simulating, analysing, optimising and visualising products across multiple engineering domains. It combines connected workflows with standalone applications for CAD, simulation and product development within an integrated environment.</p>
+        </section>
+
+        <section class="forge-caps" id="forge-caps">
+            <div class="forge-wrap forge-caps-grid">
+                <aside class="forge-caps-pin">
+                    <p class="forge-kicker">Capabilities</p>
+                    <h2 class="forge-caps-title" data-word-in aria-label="Why modern teams choose us">
+                        <span>Why</span>
+                        <span>modern</span>
+                        <span>teams</span>
+                        <span class="forge-mark">choose</span>
+                        <span class="forge-mark">us</span>
+                    </h2>
+                    <p class="forge-caps-lead forge-in">
+                        As models and physics grow more complex, the software should flex — not the process.
+                        Start with the applications you need, then grow into a full Pi-Forge workspace.
+                    </p>
+                    <div class="forge-caps-nav" data-cap-nav role="navigation" aria-label="Capability topics">
+                        <button class="is-on" type="button" data-jump="hosting">
+                            <span class="forge-caps-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="13" r="7.5"/><path d="M12 9.5v4l2 1M9 4h6"/></svg>
+                            </span>
+                            Flexible deployment
+                        </button>
+                        <button type="button" data-jump="layout">
+                            <span class="forge-caps-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 16l5-5 3 3 8-8"/><path d="M14 6h5v5"/></svg>
+                            </span>
+                            Customisable workspace
+                        </button>
+                        <button type="button" data-jump="access">
+                            <span class="forge-caps-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l8 3v6c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V6l8-3z"/><path d="M9.2 12.2l2 2 3.8-3.8"/></svg>
+                            </span>
+                            Role-based environment
+                        </button>
+                    </div>
+                </aside>
+
+                <div class="forge-caps-stack">
+                    <article class="forge-caps-block" id="cap-hosting" data-cap="hosting">
+                        <h3>Deploy on your terms</h3>
+                        <p>Run Pi-Forge in the cloud or on-premises so security, data residency and operations stay aligned with your organisation. Teams keep the same workspace whether they are in one site or many.</p>
+                        <div class="forge-media">
+                            <div class="forge-ui forge-ui-host" aria-hidden="true">
+                                <div class="forge-ui-bar"><span></span><span></span><span></span></div>
+                                <div class="forge-ui-cols">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="forge-prompt" aria-hidden="true">
+                                <span data-prompt-line></span><span class="forge-caret"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="forge-caps-block" id="cap-layout" data-cap="layout">
+                        <h3>Shape the workflow around the team</h3>
+                        <p>Pick the applications and stages you need — geometry, mesh, solvers, post-processing and reporting — and assemble a workspace that matches how your engineers already work.</p>
+                        <div class="forge-media">
+                            <div class="forge-ui forge-ui-flow" aria-hidden="true">
+                                <span>CAD</span>
+                                <span>Mesh</span>
+                                <span>Solve</span>
+                                <span>Review</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="forge-caps-block" id="cap-access" data-cap="access">
+                        <h3>Give every role the right tools</h3>
+                        <p>Administrators can open or hide applications by role, department or project, so each person sees the solvers and files they need — nothing extra.</p>
+                        <div class="forge-media">
+                            <div class="forge-ui forge-ui-roles" aria-hidden="true">
+                                <div><b>Design</b><small>Mech · Civil</small></div>
+                                <div><b>Analysis</b><small>Flow · Thermal · Struct</small></div>
+                                <div><b>Electronics</b><small>Elec · MultiPhy</small></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="forge-connect" id="forge-connect">
+            <p class="forge-kicker forge-in">Integrations</p>
+            <h2 class="forge-in">Works with the tools<br>you already use.</h2>
+            <div class="forge-arc" aria-hidden="true">
+                <div class="forge-arc-wash"></div>
+                <div class="forge-arc-spin">
+                    <span class="forge-arc-mark" style="--i:0"><img src="/assets/icons/embeddedSystemsIcon.svg" alt=""></span>
+                    <span class="forge-arc-mark" style="--i:1"><img src="/assets/icons/automotiveIndustryIcon.svg" alt=""></span>
+                    <span class="forge-arc-mark" style="--i:2"><img src="/assets/icons/precisionManufacturingIcon.svg" alt=""></span>
+                    <span class="forge-arc-mark" style="--i:3"><img src="/assets/icons/IndustrialAutomationIcon.svg" alt=""></span>
+                    <span class="forge-arc-mark" style="--i:4"><img src="/assets/icons/eduEngiToolsIcon.svg" alt=""></span>
+                </div>
+            </div>
+        </section>
+
+        <div class="forge-blueband">
+            <section class="forge-apps" id="forge-apps">
+                <div class="forge-wrap-s">
+                    <p class="forge-kicker forge-kicker-light forge-in">Modules</p>
+                    <h2 class="forge-in">Pi-CADS applications inside one Forge workspace</h2>
+                    <div class="forge-app-grid">
+                        <article class="forge-app-card forge-in">
+                            <h3>Pi-CADS Mech</h3>
+                            <div class="forge-app-art forge-art-mech" aria-hidden="true"></div>
+                            <p>Build accurate 3D CAD models for design and manufacturing</p>
+                        </article>
+                        <article class="forge-app-card forge-in">
+                            <h3>Pi-CADS Motor</h3>
+                            <div class="forge-app-art forge-art-motor" aria-hidden="true"></div>
+                            <p>An integrated platform for synchronous and induction motor design</p>
+                        </article>
+                        <article class="forge-app-card forge-in">
+                            <h3>Pi-CADS Flow</h3>
+                            <div class="forge-app-art forge-art-flow" aria-hidden="true"></div>
+                            <p>Complete platform for flow analysis and 3D insights</p>
+                        </article>
+                        <article class="forge-app-card forge-in">
+                            <h3>Pi-CADS Thermal</h3>
+                            <div class="forge-app-art forge-art-thermal" aria-hidden="true"></div>
+                            <p>Thermal analysis for heat flow and hotspot detection</p>
+                        </article>
+                        <article class="forge-app-card forge-in">
+                            <h3>Pi-CADS Struct</h3>
+                            <div class="forge-app-art forge-art-struct" aria-hidden="true"></div>
+                            <p>Structural simulations for strength, stability and material behaviour</p>
+                        </article>
+                        <article class="forge-app-card forge-in">
+                            <h3>Pi-CADS Elec</h3>
+                            <div class="forge-app-art forge-art-elec" aria-hidden="true"></div>
+                            <p>End-to-end PCB design, analysis and validation</p>
+                        </article>
+                        <article class="forge-app-card forge-in">
+                            <h3>Pi-CADS MultiPhy</h3>
+                            <div class="forge-app-art forge-art-multi" aria-hidden="true"></div>
+                            <p>Integrated CHT and coupled multi-physics workflows</p>
+                        </article>
+                        <article class="forge-app-card forge-in">
+                            <h3>Pi-CADS Civil</h3>
+                            <div class="forge-app-art forge-art-civil" aria-hidden="true"></div>
+                            <p>Architecture and construction planning in 2D and 3D</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forge-tools" id="forge-tools">
+                <div class="forge-wrap-s">
+                    <p class="forge-kicker forge-kicker-light forge-in">Tools</p>
+                    <h2 class="forge-in">Shared tools across every application</h2>
+                    <div class="forge-tool-grid">
+                        <article class="forge-tool-card forge-in">
+                            <h3>CAD</h3>
+                            <p>Mechanical CAD and geometry development</p>
+                            <div class="forge-tool-art forge-art-cad" aria-hidden="true"></div>
+                        </article>
+                        <article class="forge-tool-card forge-in">
+                            <h3>MESH</h3>
+                            <p>Geometry preparation and mesh generation</p>
+                            <div class="forge-tool-art forge-art-mesh" aria-hidden="true"></div>
+                        </article>
+                        <article class="forge-tool-card forge-in">
+                            <h3>Post-Processing</h3>
+                            <p>Visualise and inspect simulation results</p>
+                            <div class="forge-tool-art forge-art-post" aria-hidden="true"></div>
+                        </article>
+                        <article class="forge-tool-card forge-in">
+                            <h3>One Click Simulation</h3>
+                            <p>Upload a model and run a guided study</p>
+                            <div class="forge-tool-art forge-art-click" aria-hidden="true"></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="forge-why" id="forge-why">
+            <div class="forge-wrap">
+                <div class="forge-why-head">
+                    <p class="forge-kicker forge-in">Why Pi-Forge?</p>
+                    <h2 class="forge-in">The modern engineering ecosystem</h2>
+                    <p class="forge-why-lead forge-in">
+                        Pi-Forge brings product design, computation, simulation and digital validation
+                        into one environment so teams can move from geometry to a decision without
+                        stitching disconnected tools together.
+                    </p>
+                </div>
+
+                <div class="forge-why-tabs" data-switch role="tablist" aria-label="Why Pi-Forge">
+                    <button class="is-on" type="button" role="tab" aria-selected="true" data-switch-id="design">Design</button>
+                    <button type="button" role="tab" aria-selected="false" data-switch-id="simulate">Simulate</button>
+                    <button type="button" role="tab" aria-selected="false" data-switch-id="analyse">Analyse</button>
+                    <button type="button" role="tab" aria-selected="false" data-switch-id="integrate">Integrate</button>
+                    <button type="button" role="tab" aria-selected="false" data-switch-id="optimise">Optimise</button>
+                </div>
+
+                <article class="forge-why-pane is-on forge-in" data-pane="design">
+                    <div class="forge-why-visual forge-scene-design" aria-hidden="true"></div>
+                    <div class="forge-why-copy">
+                        <span class="forge-badge">Design</span>
+                        <ul>
+                            <li>
+                                <h3>Build engineering geometry</h3>
+                                <p>Create parts, assemblies and simulation-ready models for development and validation.</p>
+                            </li>
+                            <li>
+                                <h3>Drive models with parameters</h3>
+                                <p>Change dimensions and constraints before meshing or running a study.</p>
+                            </li>
+                            <li>
+                                <h3>Inspect regions and assemblies</h3>
+                                <p>Review geometry and flow volumes in interactive 3D views.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="forge-why-pane" data-pane="simulate" hidden>
+                    <div class="forge-why-visual forge-scene-simulate" aria-hidden="true"></div>
+                    <div class="forge-why-copy">
+                        <span class="forge-badge">Simulate</span>
+                        <ul>
+                            <li>
+                                <h3>Evaluate behaviour digitally</h3>
+                                <p>Study structural, thermal, flow, electrical and coupled response under load.</p>
+                            </li>
+                            <li>
+                                <h3>Run connected studies</h3>
+                                <p>Move between single-domain and multi-domain simulations in one workflow.</p>
+                            </li>
+                            <li>
+                                <h3>Validate before you build</h3>
+                                <p>Find issues early and cut repeated physical prototypes.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="forge-why-pane" data-pane="analyse" hidden>
+                    <div class="forge-why-visual forge-scene-analyse" aria-hidden="true"></div>
+                    <div class="forge-why-copy">
+                        <span class="forge-badge">Analyse</span>
+                        <ul>
+                            <li>
+                                <h3>Review results</h3>
+                                <p>Read field data, plots and performance trends with a clear technical view.</p>
+                            </li>
+                            <li>
+                                <h3>Compare configurations</h3>
+                                <p>See how geometry and input changes move the result.</p>
+                            </li>
+                            <li>
+                                <h3>Support the next decision</h3>
+                                <p>Use analysis to confirm assumptions before the next design step.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="forge-why-pane" data-pane="integrate" hidden>
+                    <div class="forge-why-visual forge-scene-integrate" aria-hidden="true"></div>
+                    <div class="forge-why-copy">
+                        <span class="forge-badge">Integrate</span>
+                        <ul>
+                            <li>
+                                <h3>Connect design and simulation</h3>
+                                <p>Keep geometry, mesh, solve, visualisation and reporting in one place.</p>
+                            </li>
+                            <li>
+                                <h3>Cut hand-offs</h3>
+                                <p>Reduce file bouncing, duplicate setup and manual preprocessing.</p>
+                            </li>
+                            <li>
+                                <h3>Keep the project together</h3>
+                                <p>Modelling, analysis and reports stay in a shared workspace.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="forge-why-pane" data-pane="optimise" hidden>
+                    <div class="forge-why-visual forge-scene-optimise" aria-hidden="true"></div>
+                    <div class="forge-why-copy">
+                        <span class="forge-badge">Optimise</span>
+                        <ul>
+                            <li>
+                                <h3>Iterate with intent</h3>
+                                <p>Adjust geometry, materials and operating conditions to improve the result.</p>
+                            </li>
+                            <li>
+                                <h3>Weigh the trade-offs</h3>
+                                <p>Balance efficiency, cost, manufacturability and reliability.</p>
+                            </li>
+                            <li>
+                                <h3>Improve systematically</h3>
+                                <p>Use structured studies to reach a stronger design, not a lucky one.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="forge-who" id="forge-who">
+            <p class="forge-kicker forge-in">Who do we serve?</p>
+            <h2 class="forge-who-title" data-line-in aria-label="Built around the way you engineer">
+                <span>Built</span>
+                <span>around</span>
+                <span>the</span>
+                <span>way</span>
+                <span>you</span>
+                <span>engineer</span>
+            </h2>
+            <a class="forge-who-link forge-in" href="#forge-plans">See plans</a>
+            <div class="forge-ticker" aria-hidden="true">
+                <div class="forge-ticker-row">
+                    <span>Manufacturers</span>
+                    <span>Startups</span>
+                    <span>Enterprises</span>
+                    <span>Research organisations</span>
+                    <span>Academic institutions</span>
+                    <span>Manufacturers</span>
+                    <span>Startups</span>
+                    <span>Enterprises</span>
+                    <span>Research organisations</span>
+                    <span>Academic institutions</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="forge-plans" id="forge-plans">
+            <div class="forge-wrap">
+                <p class="forge-kicker forge-in">Plans</p>
+                <h2 class="forge-in">Start with the applications you need</h2>
+                <div class="forge-plan-grid">
+                    <article class="forge-plan forge-in">
+                        <h3>Application</h3>
+                        <p class="forge-plan-price">Custom</p>
+                        <p class="forge-plan-note">One Pi-CADS application for a focused team or study.</p>
+                        <a class="forge-pill forge-pill-dark" href="mailto:info@pilabz.in?subject=Pi-Forge%20Application%20Plan">Request a quote</a>
+                        <ul>
+                            <li>Single application licence</li>
+                            <li>Cloud workspace access</li>
+                            <li>Standard solvers and post-processing</li>
+                            <li>Email support</li>
+                            <li>Onboarding for a small team</li>
+                        </ul>
+                    </article>
+
+                    <div class="forge-plan-wrap forge-in">
+                        <p>Most teams</p>
+                        <article class="forge-plan forge-plan-core">
+                            <h3>Workspace</h3>
+                            <p class="forge-plan-price">Custom</p>
+                            <p class="forge-plan-note">Connected Pi-Forge platform across design and simulation.</p>
+                            <a class="forge-pill forge-pill-blue" href="mailto:info@pilabz.in?subject=Pi-Forge%20Workspace%20Plan">Request a quote</a>
+                            <ul>
+                                <li>Multiple Pi-CADS applications</li>
+                                <li>Shared projects and reporting</li>
+                                <li>Role-based application access</li>
+                                <li>Priority support</li>
+                                <li>Cloud or hybrid deployment</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <article class="forge-plan forge-in">
+                        <h3>Enterprise</h3>
+                        <p class="forge-plan-price">Custom</p>
+                        <p class="forge-plan-note">Organisation-wide deployment with security and scale in mind.</p>
+                        <a class="forge-pill forge-pill-dark" href="mailto:info@pilabz.in?subject=Pi-Forge%20Enterprise%20Plan">Talk to sales</a>
+                        <ul>
+                            <li>Full application suite</li>
+                            <li>On-premises or private cloud</li>
+                            <li>Admin controls and audit-ready access</li>
+                            <li>Dedicated technical contact</li>
+                            <li>Training and workflow setup</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="forge-close" id="forge-contact">
+            <div class="forge-close-card forge-in">
+                <h2>Put design and simulation in one workflow</h2>
+                <p>Talk to the Pi-Forge team about the applications, deployment model and workspace that fit your engineering process.</p>
+                <div class="forge-hero-actions">
+                    <a class="forge-pill forge-pill-dark" href="mailto:info@pilabz.in?subject=Pi-Forge%20Demo%20Request">Request a demo</a>
+                    <a class="forge-pill forge-pill-white" href="#forge-plans">See plans</a>
+                </div>
+                <div class="forge-close-shot">
+                    <img src="/assets/images/pi-forge-img.png" alt="Pi-Forge product preview" width="920" height="320">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="forge-end">
+        <div class="forge-end-left">
+            <a href="/pi-forge" class="forge-end-mark" aria-label="Pilabz Forge">
+                <svg class="piForgeLogo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 31" fill="none" aria-hidden="true">
+                    <path d="M5.03717 0.0523288L18.6131 0.0606812C19.7705 0.0606812 21.6185 0.187081 22.7059 0.0606812C27.0651 -0.441783 31.1099 2.20112 31.0149 7.06279C30.9846 9.03922 30.1614 10.9206 28.7313 12.2838C27.8026 13.1613 26.6494 13.7661 25.4 14.0325C23.7735 14.3898 19.968 14.2644 18.1158 14.2613L8.2452 14.2655C6.92062 18.4972 5.80915 22.822 4.51695 27.0673C4.27773 27.8498 4.04165 28.6917 3.85048 29.4856C2.60842 28.5392 1.19714 27.5437 0 26.5931C1.22743 22.285 2.60947 17.6114 3.74393 13.3096C3.67811 13.1038 2.84451 12.0968 2.59902 11.6654C2.11223 10.907 1.50007 10.0922 0.970446 9.3526C2.05999 9.34215 4.00091 9.27217 5.0027 9.51452C5.91466 9.55735 6.84541 9.55213 7.76154 9.54691C13.2876 9.51244 18.8262 9.64301 24.3491 9.50512C24.7283 9.49572 25.2538 9.18024 25.5358 8.93475C26.0748 8.46154 26.3966 7.7888 26.4269 7.07219C26.4593 6.42348 26.2274 5.78835 25.7834 5.31305C24.7314 4.19948 22.1157 4.5254 20.6115 4.52645L12.3683 4.53272C11.0176 4.54003 9.60426 4.57554 8.24939 4.53584C7.82422 4.52331 7.80229 4.41677 7.56829 4.15457L7.39906 3.8276L5.03717 0.0523288Z" fill="#0079D1"/>
+                    <path d="M4.7714 9.67578C4.43921 10.8426 4.03655 12.1448 3.74406 13.3096C3.67825 13.1038 2.84503 12.0965 2.59953 11.665C2.61519 10.9819 2.05655 10.2827 1.66691 9.73535C2.71559 9.6967 3.71958 9.6528 4.7714 9.67578Z" fill="#0079D1"/>
+                    <path d="M10.3958 17.4303C16.5131 17.5442 22.7955 17.2945 28.9201 17.4491C27.8202 18.969 26.7024 20.4754 25.5669 21.9692C22.9073 22.1217 19.6313 22.035 16.9393 22.0319C15.9135 22.0455 14.8867 22.0402 13.8608 22.0141C13.022 24.749 12.2072 27.49 11.4164 30.2395C9.84218 30.2071 8.22093 30.2207 6.64146 30.2155C7.91694 25.9607 9.16839 21.6987 10.3958 17.4303Z" fill="#0079D1"/>
+                    <path d="M2.46851 5.69946C9.52076 5.9554 16.5772 6.06717 23.6336 6.03687C24.1611 6.03478 24.6176 6.17059 25.1326 6.28863C22.1022 6.43279 18.7312 6.31789 15.6684 6.34818C14.5057 6.35863 11.0041 6.37952 9.9971 6.24267C7.65923 6.24999 5.55955 6.03374 3.14647 6.08806C3.44209 6.5571 3.72831 7.05748 4.01245 7.53592C3.47238 7.03241 2.9365 6.29281 2.46851 5.69946Z" fill="#0079D1"/>
+                    <path d="M1.73285 7.54761C8.78301 7.59462 15.5814 7.85368 22.6995 7.791C23.4673 7.78055 24.046 7.79727 24.8117 7.84532C22.4362 8.34256 18.5001 8.02082 15.9627 8.10962C15.1531 8.13782 11.4938 8.12215 10.7574 8.01664C7.95149 8.025 5.06624 7.94247 2.24784 7.91113C2.4108 8.16393 2.57482 8.35406 2.61034 8.64655C2.23949 8.34675 2.00759 7.94561 1.73285 7.54761Z" fill="#0079D1"/>
+                    <path d="M7.39901 3.82723L7.56824 4.1542C6.40558 4.13749 5.23873 4.10406 4.07815 4.16674L4.00922 4.27432C4.17427 4.54697 4.20142 4.5407 4.22336 4.84991C4.06144 4.88856 3.466 3.98183 3.33543 3.80633C4.55764 3.74052 6.15278 3.8053 7.39901 3.82723Z" fill="#0079D1"/>
+                    <path d="M43.6699 19.5352V10.6572H47.107C48.9333 10.6572 50.0113 11.7606 50.0113 13.3332C50.0113 14.9059 48.9333 16.0093 47.107 16.0093H44.9889V19.5352H43.6699ZM47.0689 14.8679C48.2104 14.8679 48.6543 14.1449 48.6543 13.3332C48.6543 12.5215 48.2104 11.7986 47.0689 11.7986H44.9889V14.8679H47.0689ZM51.1977 19.5352V13.143H52.4279V19.5352H51.1977ZM51.1216 10.4669H52.4913V12.0142H51.1216V10.4669ZM54.2198 19.5352V10.4669H55.45V19.5352H54.2198ZM59.1189 19.6366C57.8126 19.6366 56.9375 18.8503 56.9375 17.7088C56.9375 16.4786 57.9267 15.6669 59.4233 15.6669H60.7677C61.0594 15.6669 61.1989 15.5654 61.1989 15.3371C61.1989 14.5635 60.6282 14.0308 59.6516 14.0308C58.7511 14.0308 58.117 14.5888 58.0789 15.2357H56.9375C57.0389 13.9801 58.1677 13.0415 59.6897 13.0415C61.3384 13.0415 62.4165 13.9927 62.4165 15.4132V19.5352H61.1989V18.4825C60.8818 19.18 60.0828 19.6366 59.1189 19.6366ZM59.3599 18.66C60.514 18.66 61.1989 17.9117 61.1989 16.7322V16.6181H59.5501C58.7131 16.6181 58.1677 17.0113 58.1677 17.6835C58.1677 18.2669 58.637 18.66 59.3599 18.66ZM67.4131 19.6366C66.5507 19.6366 65.739 19.2181 65.3585 18.5839V19.5352H64.1283V10.4669H65.3585V14.0815C65.7517 13.4474 66.5507 13.0415 67.4004 13.0415C69.3282 13.0415 70.4316 14.4493 70.4316 16.3391C70.4316 18.2288 69.3282 19.6366 67.4131 19.6366ZM67.2229 18.5586C68.4024 18.5586 69.1887 17.6708 69.1887 16.3391C69.1887 15.0074 68.4024 14.1196 67.2229 14.1196C66.0434 14.1196 65.257 15.0074 65.257 16.3391C65.257 17.6708 66.0434 18.5586 67.2229 18.5586ZM71.226 19.5352V18.4698L75.0055 14.2084H71.4162V13.143H76.426V14.2084L72.6719 18.4698H76.6035V19.5352H71.226ZM77.1632 16.6181V15.5527H81.1456V16.6181H77.1632ZM82.9804 19.5352V14.2084H81.6741V13.143H82.9804V12.5215C82.9804 11.2659 83.8048 10.4669 85.0858 10.4669H86.1512V11.5323H85.1873C84.5912 11.5323 84.2107 11.9254 84.2107 12.5596V13.143H86.1512V14.2084H84.2107V19.5352H82.9804ZM89.8213 19.6366C87.9061 19.6366 86.5237 18.2542 86.5237 16.3391C86.5237 14.424 87.9061 13.0415 89.8213 13.0415C91.7364 13.0415 93.1061 14.424 93.1061 16.3391C93.1061 18.2542 91.7364 19.6366 89.8213 19.6366ZM89.8213 18.5586C91.0261 18.5586 91.8505 17.6454 91.8505 16.3391C91.8505 15.0327 91.0261 14.1196 89.8213 14.1196C88.6037 14.1196 87.7793 15.0327 87.7793 16.3391C87.7793 17.6454 88.6037 18.5586 89.8213 18.5586ZM94.473 19.5352V13.143H95.7032V14.3732C95.9949 13.5235 96.5022 13.143 97.4027 13.143H98.1764V14.2084H97.2505C96.0837 14.2084 95.7032 15.2484 95.7032 16.6435V19.5352H94.473ZM99.4376 22.1225V21.0951H102.393C103.141 21.0951 103.661 20.5498 103.661 19.7634V18.7235C103.344 19.2688 102.52 19.6366 101.594 19.6366C99.6913 19.6366 98.5879 18.2288 98.5879 16.3391C98.5879 14.4493 99.6786 13.0415 101.606 13.0415C102.431 13.0415 103.255 13.422 103.661 13.9927V13.143H104.891V19.8395C104.891 21.2093 103.953 22.1225 102.52 22.1225H99.4376ZM101.797 18.5586C102.976 18.5586 103.75 17.6708 103.75 16.3391C103.75 15.0074 102.976 14.1196 101.797 14.1196C100.604 14.1196 99.8308 15.0074 99.8308 16.3391C99.8308 17.6708 100.604 18.5586 101.797 18.5586ZM109.462 19.6366C107.484 19.6366 106.266 18.0766 106.266 16.301C106.266 14.5127 107.382 13.0415 109.348 13.0415C111.314 13.0415 112.367 14.4493 112.367 16.0727C112.367 16.2376 112.354 16.4532 112.341 16.5674H107.471C107.573 17.7596 108.359 18.5839 109.462 18.5839C110.401 18.5839 111.01 18.1781 111.187 17.4552H112.418C112.202 18.7742 111.048 19.6366 109.462 19.6366ZM107.509 15.6162H111.124C111.048 14.6396 110.401 14.0308 109.348 14.0308C108.359 14.0308 107.7 14.5762 107.509 15.6162Z" fill="#0079D1"/>
+                </svg>
+            </a>
+            <div class="forge-end-contact">
+                <div>Contact us:</div>
+                <a href="mailto:info@pilabz.in">info@pilabz.in</a>
+            </div>
+        </div>
+        <div class="forge-end-right">
+            <div><a href="#forge-caps">Capabilities</a></div>
+            <div><a href="#forge-apps">Modules</a></div>
+            <div><a href="#forge-why">Why Pi-Forge</a></div>
+            <div><a href="#forge-plans">Plans</a></div>
+            <div><a href="/#contact">Pilabz contact</a></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
