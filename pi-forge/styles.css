@@ -242,12 +242,14 @@ header nav:first-of-type.hiddenNav {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     padding: 12px 22px;
     border-radius: 999px;
     font-family: 'Zoho Puvi', sans-serif;
     font-size: 15px;
     font-weight: 600;
     white-space: nowrap;
+    line-height: 1.2;
     transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
 }
 
@@ -1163,9 +1165,14 @@ header nav:first-of-type.hiddenNav {
 .forge-plan-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-rows: auto 1fr;
+    column-gap: 20px;
     margin-top: 40px;
     align-items: stretch;
+}
+
+.forge-plan-grid > .forge-plan {
+    grid-row: 2;
 }
 
 .forge-plan {
@@ -1197,11 +1204,14 @@ header nav:first-of-type.hiddenNav {
     color: #6d6d6d;
     font-size: 15px;
     line-height: 1.45;
-    min-height: 2.8em;
+    min-height: 3em;
 }
 
 .forge-plan .forge-pill {
     width: 100%;
+    max-width: 100%;
+    flex: none;
+    margin-top: 4px;
 }
 
 .forge-plan ul {
@@ -1234,14 +1244,20 @@ header nav:first-of-type.hiddenNav {
 }
 
 .forge-plan-wrap {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: subgrid;
     background: linear-gradient(125deg, #4686fe 0%, #659bff 66%);
     border-radius: 36px;
-    padding: 12px 4px 4px;
+    padding: 0 4px 4px;
     box-shadow: 0 16px 40px rgba(70, 134, 254, 0.28);
+    box-sizing: border-box;
 }
 
 .forge-plan-wrap > p {
-    margin: 0 0 10px;
+    grid-row: 1;
+    margin: 0;
+    padding: 14px 12px 12px;
     text-align: center;
     color: #fff;
     font-size: 14px;
@@ -1249,8 +1265,10 @@ header nav:first-of-type.hiddenNav {
 }
 
 .forge-plan-core {
+    grid-row: 2;
     border: 0;
     box-shadow: none;
+    height: auto;
 }
 
 /* Close CTA */
@@ -1379,10 +1397,30 @@ header nav:first-of-type.hiddenNav {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .forge-why-pane,
-    .forge-plan-grid {
+    .forge-why-pane {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .forge-plan-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        row-gap: 20px;
+    }
+
+    .forge-plan-grid > .forge-plan,
+    .forge-plan-wrap,
+    .forge-plan-core {
+        grid-row: auto;
+    }
+
+    .forge-plan-wrap {
+        display: block;
+        padding: 12px 4px 4px;
+    }
+
+    .forge-plan-wrap > p {
+        padding: 0 12px 12px;
     }
 
     .forge-caps-grid {
